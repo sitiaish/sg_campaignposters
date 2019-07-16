@@ -1,0 +1,306 @@
+campaign,year,subcat
+population,population,sterilisation
+population,1975,small families
+population,1975,small families 
+population,1975,small families 
+population,1975,small families 
+population,1975,small families 
+population,1975,small families 
+population,1975,small families 
+population,1975,small families 
+population,1978,two
+population,1976,two
+population,1978,two is enough
+population,1978,two is enough
+population,1978,two is enough
+population,1978,two is enough
+population,1978,two is enough
+population,1978,wait
+population,1978,wait 
+population,1980,wait
+population,1983,two is enough
+population,1984,grow
+population,1985,grow
+population,1986,grow
+population,1986,family 
+population,1986,family
+population,1986,abortion
+population,1987,marriage 
+population,1988,family 
+population,1989,family
+population,1989,family 
+population,1990,grow
+population,1997,marriage 
+population,2000,grow
+population,2001,family
+population,2004,family 
+population,2004,marriage 
+population,2004,family 
+population,2004,family 
+environment,1977,pollution
+environment,1978,cleanliness
+environment,1979,food hygeine
+environment,1979,cleanliness
+environment,1979,dengue
+environment,1979,toilet hygeine
+environment,1981,cleanliness
+environment,1981,littering
+environment,1981,food hygeine
+environment,1983,cleanliness
+environment,1985,food hygeine
+environment,1987,food hygeine
+environment,1987,food hygeine
+environment,1988,cleanliness
+environment,1988,cleanliness
+environment,1991,publicity 
+environment,1991,publicity 
+environment,1992,publicity 
+environment,1996,littering
+environment,1996,cleanliness
+environment,1996,cleanliness
+environment,1996,recycling
+environment,1998,cleanliness
+environment,2000,littering
+environment,2000,toilet hygeine
+environment,2001,recycling
+environment,2003,personal hygeine
+environment,2003,toilet hygeine
+environment,2003,sars
+environment,2003,sars
+environment,2003,sars
+environment,2003,sars
+environment,2003,sars
+environment,2003,toilet hygeine
+environment,2003,personal hygeine
+environment,2005,recycling
+environment,2005,dengue
+environment,2005,recycling
+environment,2005,dengue
+environment,2005,dengue
+environment,2005,recycling
+environment,2005,dengue
+environment,2005,dengue
+environment,2005,toilet hygeine
+environment,2005,recycling
+environment,2005,toilet hygeine
+environment,2005,recycling
+environment,2005,recycling
+environment,2005,dengue
+environment,2005,littering
+environment,2005,dengue
+environment,2005,dengue
+environment,2005,littering
+environment,2005,recycling
+environment,2005,recycling
+environment,2005,recycling
+environment,2005,recycling
+environment,2005,toilet hygeine
+environment,2005,recycling
+environment,2005,recycling
+environment,2005,toilet hygeine
+environment,2005,dengue
+environment,2005,dengue
+environment,2007,recycling
+environment,2007,recycling
+environment,2007,recycling
+environment,2007,recycling
+health,1975,dental
+health,1975,dental
+health,1975,dental
+health,1975,dental
+health,1975,dental
+health,1975,dental
+health,1975,dental
+health,1976,disease
+health,1976,disease
+health,1977,disease
+health,1978,publicity 
+health,1978,disease
+health,1979,healthy living
+health,1979,smoking
+health,1979,healthy living
+health,1979,disease
+health,1979,publicity 
+health,1979,publicity 
+health,1979,publicity 
+health,1979,publicity 
+health,1979,publicity 
+health,1979,disease
+health,1979,dental
+health,1979,publicity 
+health,1979,publicity 
+health,1979,disease
+health,1979,disease
+health,1979,disease
+health,1979,disease
+health,1979,disease
+health,1979,smoking
+health,1979,mental
+health,1979,disease
+health,1979,disease
+health,1979,disease
+health,1980,publicity 
+health,1980,disease
+health,1980,smoking
+health,1980,breastfeeding
+health,1980,smoking
+health,1980,disease
+health,1980,smoking
+health,1982,diet
+health,1983,publicity 
+health,1983,smoking
+health,1983,dental
+health,1983,safety
+health,1983,children
+health,1983,disease
+health,1984,disease
+health,1984,smoking
+health,1984,diet
+health,1984,disease
+health,1984,spitting
+health,1984,dental
+health,1985,service
+health,1985,smoking
+health,1985,breastfeeding
+health,1985,spitting
+health,1985,spitting
+health,1985,dental
+health,1985,smoking
+health,1985,service
+health,1986,healthy living
+health,1986,smoking
+health,1986,smoking
+health,1986,smoking
+health,1986,publicity 
+health,1986,abortion
+health,1986,smoking
+health,1987,service
+health,1987,diet
+health,1987,diet
+health,1987,disease
+health,1987,aids
+health,1987,aids
+health,1987,aids
+health,1987,aids
+health,1987,diet
+health,1987,diet
+health,1987,diet
+health,1988,aids
+health,1988,aids
+health,1988,smoking
+health,1988,smoking
+health,1988,smoking
+health,1988,disease
+health,1988,blood donation
+health,1988,dental
+health,1988,dental
+health,1989,dental
+health,1989,publicity 
+health,1989,aids
+health,1989,aids
+health,1989,aids
+health,1989,aids
+health,1989,aids
+health,1989,diet
+health,1989,disease
+health,1989,smoking
+health,1990,smoking
+health,1990,smoking
+health,1990,disease
+health,1991,smoking
+health,1991,service
+health,1991,dental
+health,1991,aids
+health,1991,disease
+health,1991,aids
+health,1991,disease
+health,1991,dental
+health,1991,dental
+health,1992,publicity 
+health,1992,dental
+health,1992,healthy living
+health,1992,aids
+health,1992,smoking
+health,1992,diet
+health,1992,diet
+health,1992,diet
+health,1992,diet
+health,1993,children
+health,1993,healthy living
+health,1993,children
+health,1993,children
+health,1993,eyecare
+health,1993,dental
+health,1994,healthy living
+health,1994,aids
+health,1994,smoking
+health,1994,smoking
+health,1994,aids
+health,1994,healthy living
+health,1995,smoking
+health,1995,smoking
+health,1996,publicity 
+health,1996,healthy living
+health,1996,disease
+health,1996,disease
+health,1996,smoking
+health,1996,smoking
+health,1997,disease
+health,1997,healthy living
+health,1998,publicity 
+health,1998,publicity 
+health,1998,publicity 
+health,1999,publicity 
+health,2000,publicity 
+health,2000,publicity 
+health,2000,blood donation
+health,2000,publicity 
+health,2003,sars
+health,2003,sars
+health,2003,sars
+health,2003,sars
+health,1999,publicity 
+health,1999,disease
+health,2000,smoking
+health,2001,disease
+health,2001,publicity 
+health,2002,publicity 
+health,2002,healthy living
+health,2002,healthy living
+health,2002,disease
+health,2002,disease
+health,2003,diet
+health,2003,smoking
+health,2003,smoking
+health,2003,aids
+health,2003,smoking
+health,2003,aids
+health,2004,diet
+health,2004,disease
+health,2004,diet
+health,2004,diet
+health,2004,personal hygeine
+health,2004,personal hygeine
+health,2004,personal hygeine
+health,2004,diet
+health,2005,dental
+health,2005,dental
+health,2005,smoking
+health,2005,healthy living
+health,2005,smoking
+health,2005,smoking
+health,2005,dental
+health,2005,dental
+health,2005,dental
+health,2005,dental
+health,2006,healthy living
+health,2006,smoking
+health,2006,smoking
+health,2006,personal hygeine
+health,2006,personal hygeine
+health,2006,healthy living
+health,2006,disease
+health,2006,mental
+health,2006,mental
+health,2006,mental
+health,2006,mental

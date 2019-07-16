@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<style> /* set the CSS */
+.yearAxis line, .yearAxis path{
+  stroke-width: 2px;
+  stroke: #2d3436;
+}
+
+.yearAxis text {
+  font-size: 13px;
+}
+
+text {
+  font-family: 'Roboto Mono', monospace;
+}  
+  
+</style>
+
+<title>An Interactive Visualisation of Singapore's National Campaign Poster </title>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+<!-- CSS for D3 and Semantic UI -->
+<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<!-- Javascript for D3 and Semantic UI -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="js/semantic.min.js"></script>
+
+<!-- Javascript for scrollmagic -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+</head>
+
+<body>
+
+<div class = "container">
+<!-- <div class="ui five item secondary menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item" href = "population.html">
+    Population
+  </a>
+  <a class="item">
+    Health
+  </a>
+  <a class="item">
+    Environment
+  </a>
+</div>
+ -->
+<h1 class = "header">Singapore In Posters</h1>
+<h3 class = "header">An Interactive Visualisation of <br>Singapore's National Campaign Posters from 1965 -2005</h3>
+<p>By  AISHAH</p>
+
+<div class = "content">
+<p>How many kids should you have? How do you use the toilet? Do you know what are the illness that can kill you? Fret not, the Singapore government will tell you the answers to this!</p>
+
+<p>
+Singapore is the ‘Campaign City’. In less than 55 years of independence, Singaporeans have seen a plethora of over 200 national campaigns (cite). This research project is an attempt to trace how Singapore’s society changed over the years in terms of state policies that manifest in national campaigns. According to Tham (1986), national campaigns, in the context of Singapore, are state initiated and inspired movements which have an organised and formal course of action, taken with the intent of arousing public awareness and influencing public behaviour (Tham, 1986).</p>
+
+<p>Posters are more than just communication tools used in campaigns. To a a larger extent, posters are the product of national policies that aim to mitigate certain social issues in Singapore. As such, a longitudinal study of posters can refashion posters as sort of a barometer to distill the social landscapes of a particular time.</p>
+
+<p>Each grid box here represents a campaign poster pertaining to either one of the following categories – health, environment and population control. These posters are courtesy of the National Archive of Singapore’s (NAS) digital database.</p>
+</div>
+
+</div>
+
+<!-- <div class="ui five item secondary menu" id="filters">
+
+  <a id="orderAppearances" class="item">
+    decade
+  </a>
+  <a id="campaignType" class="item">
+    campaign type
+  </a>
+  <a id="orderFirst" class="item">
+    visual type
+  </a>
+  <a id="orderName" class="item">
+    colors
+  </a>
+</div>
+
+ -->
+<!-- <script src="js/main.js"></script>
+ -->
+ <script src="js/all.js"></script>
+
+<div class = "content">
+<p>After poring over thousands of questions, we’ve identified recurring concerns voiced by Dear Abby readers. Let’s focus on some of the most debated topics from the past half-century: sex, religion, and LGBTQ issues.</p>
+
+</div>
+
+<section>
+<h2>Clean and Green, Singapore!</h2>
+
+<script src="js/env.js"></script>
+
+
+</section>
+
+</body>
+</html>
