@@ -70,10 +70,12 @@ body {
 #posterSide img{
   width: 200px;
   border: 5px solid #73AD21;
-
-
 }
 
+
+#photoload{
+  display: none;
+}
 
 .gridsquare {
    display: grid;
