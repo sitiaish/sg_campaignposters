@@ -1,6 +1,7 @@
 let allchart = d3.select("body")
-		.append('div')
-		.attr('class', 'graphic')
+		.select("#allposters")
+		// .append('div')
+		// .attr('class', 'graphic')
 		.append('svg')
 		.attr('width', 1100)
 		.attr('height', 620)
@@ -58,8 +59,10 @@ d3.json("test.json").then(function(data) {
 	 	.attr('x', d => xScale(d.year))
 	 	.attr('y', (d,i) => innerHeight -20 - (i * 15))
 	 	.attr('fill', "#b2bec3")
-	 	.on("click", d => toolTipBox(d.imgfull, d.subcat))					
-        .on("mouseover", hovered);
+	 	.on("mouseover.image", d => toolTipBox(d.imgfull, d.subcat))					
+        .on("mouseover.color", hovered)
+        .on("mouseout", hoverOut);
+
 
 // the on hover boxes
 
@@ -67,7 +70,7 @@ d3.json("test.json").then(function(data) {
 	    .attr("class", "tooltip")				
 	    .style("opacity", 0)
 		.style("left", "500px")		
-		.style("top", "860px")
+		.style("top", "1375px")
 	    .style("z-index", 9999)
 
 	divBox.append("img")
@@ -116,16 +119,24 @@ d3.json("test.json").then(function(data) {
 
 function hovered(d, i) {  // Add interactivity
     d3.select(this)
-    	.attr("fill","orange",)
-    	.attr("stroke","pink")
-    	.attr("stroke-width", 2);
+    	.attr("fill","#f5f6fa",)
+    	.attr("stroke","black")
+    	.attr("stroke-width", 3)
+    	.attr('width', 30)
+		.attr('height', 15)
     };
 
 function hoverOut(d, i) {
     // Use D3 to select element, change color back to normal
     d3.select(this)
-    	.attr("fill","#b2bec3")
     	.attr("stroke","none")
+    	.attr('width', 25)
+		.attr('height', 10)
+		.attr("fill", function(d){
+     		return d.campaign === 'population' ? "#ff7675" 
+     		: d.campaign === 'environment' ? "#00cec9"
+     		: "#fdcb6e"
+ 	});
 };
 
 function catColor() {
@@ -152,6 +163,5 @@ function toolTipBox(posterUrl, subcat) {
 		.select("h2")
 		.text(subcat)
 		.style("display", "inline")
-
 };
 

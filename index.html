@@ -25,56 +25,144 @@ text {
 <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
-
 <!-- CSS for D3 and Semantic UI -->
 <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
-<!-- Javascript for D3 and Semantic UI -->
+<!-- D3 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js"></script>
+
+<!-- Semantic UI -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="js/semantic.min.js"></script>
 
-<!-- Javascript for scrollmagic -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-
+<!-- VUE JS -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-<div class = "container">
-<!-- <div class="ui five item secondary menu">
-  <a class="active item">
-    Home
-  </a>
-  <a class="item" href = "population.html">
-    Population
-  </a>
-  <a class="item">
-    Health
-  </a>
-  <a class="item">
-    Environment
-  </a>
-</div>
- -->
+<div id ="container" class = "container">
+
+<!-- The side posters to show on hover -->
+<div style="display:none;" id = "posterSide"><img src="/img/20.jpg"></div>
+
 <h1 class = "header">Singapore In Posters</h1>
 <h3 class = "header">An Interactive Visualisation of <br>Singapore's National Campaign Posters from 1965 -2005</h3>
 <p>By  AISHAH</p>
 
 <div class = "content">
-<p>How many kids should you have? How do you use the toilet? Do you know what are the illness that can kill you? Fret not, the Singapore government will tell you the answers to this!</p>
 
-<p>
-Singapore is the ‘Campaign City’. In less than 55 years of independence, Singaporeans have seen a plethora of over 200 national campaigns (cite). This research project is an attempt to trace how Singapore’s society changed over the years in terms of state policies that manifest in national campaigns. According to Tham (1986), national campaigns, in the context of Singapore, are state initiated and inspired movements which have an organised and formal course of action, taken with the intent of arousing public awareness and influencing public behaviour (Tham, 1986).</p>
+<p>National campaigns in Singapore, as defined by Tham (1986), are state initiated and inspired movements which have an organised and formal course of action, taken with the intent of arousing public awareness and influencing public behaviour. 
+Singapore is the ‘Campaign City’. In less than 55 years of independence, Singaporeans have seen a plethora of over 200 national campaigns. Just how many different types of campaigns can there possibly be in one country in that short amount of time? 
+In the words of the first Prime Minister Lee Kuan Yew, we had “campaigns to do this, campaigns to do that”.</p>
 
-<p>Posters are more than just communication tools used in campaigns. To a a larger extent, posters are the product of national policies that aim to mitigate certain social issues in Singapore. As such, a longitudinal study of posters can refashion posters as sort of a barometer to distill the social landscapes of a particular time.</p>
+<p>Speak good English. Two children are enough. Smile more. Do not litter. Wait have more than three children now…if you can afford it. Eat healthier and walk more. Do not smoke. 
+Who can forget Singa the Lion and his Courtesy Campaigns until his untimely resignation in 2013? Or the public education campaigns during the SARS epidemic that brought with it the catchy-but-cringe-worthy Sar-Viror rap?</p>
 
-<p>Each grid box here represents a campaign poster pertaining to either one of the following categories – health, environment and population control. These posters are courtesy of the National Archive of Singapore’s (NAS) digital database.</p>
+<p>It is peculiar how we are desensitised to materials from national campaigns that accumulate within our public spaces and hence, our collective memories as Singaporeans. Quirky campaigns are part of our social fabric here in Singapore. </p>
+
+[image]
+
+<p>And with that track record of campaigns, then imagine the number of campaign posters, jingles, mascots, taglines and slogans that have been in archives since 1965 until today. 
+Old posters are quirky and fun, and garishly designed – almost like a reflection of the times of post-independent Singapore. And on the other hand, newer posters that were produced in the early 2000s are (slightly more) tasteful. I trace national campaign posters from 1965 to 2005 to see the changes and trends in the messages. At the same time, it is an alternative way to look back at the sociohistorical landscape of Singapore. Admittedly, this piece cannot hold a candle to the already established works on Singapore’s sociohistorical literature that are based on highly credible textual sources. 
+Yet, we can agree that the national campaigns posters echo the issues that the state felt were needed to be communicated to the masses at certain time periods. In that sense, posters are like a zeitgeist.</p>
+
+<p>TLDR; I use national campaigns posters to visualise trends in their objectives and the types of message appeals to trace Singapore’s sociohistorical landscape. </p>
+
+<h4 class = "sectiontitle">The Dataset</h4>
+
+<p>There are 302 posters in the dataset. I specifically focused on three broad categories: health, environment and population-control.Each grid on represents a campaign poster from any one of the categories above. These posters are courtesy of the National Archive of Singapore’s (NAS) digital database. </p>
+</div>
+
+<!-- the first graphic: all the posters put here-->
+<div id = "allposters"></div>
+
+<!-- Environment Posters -->
+<div class = "content">
+<h4 class = "sectiontitle">Clean and Green, That’s My Singapore</h4>
+
+<p>Singapore prides itself on being the “City in the Garden” – and it very well stands by that image. The city is permeated with greenery from its meticulously planted shrubs along the roads and walkways to the development of green spaces in various neighbourhood heartlands.</p>
+
+<p>Yet, the perfectly manicured garden city that we see today is the culmination of the environmental education campaigns that started as early as 1958. Early environmental campaigns in the 1960s and 1970s were mainly targeting major clean-up of the city. We needed to “[behave] more like first world citizens, not like third word citizens – spitting and littering all over the place”, said the first PM. And so, campaigns such as the <hoverable-element content="Keep Singapore Clean (1968)" img="/img/20.jpg"></hoverable-element> were introduced to inculcate cleanliness in public spaces such work spaces, parks and common areas in the HDB houses. Posters reminded Singaporeans to <hoverable-element content="“bag your refuse”" img="/img/55_.jpg"></hoverable-element> and <hoverable-element content="“just drop it”" img="/img/86_.jpg"></hoverable-element> before throwing them in the numerous public bins provided. This also included keeping Singapore mosquito free (1969) and pollution free (1970), as well as ensuring a clean water supply. </p>
+
+<p>The  <hoverable-element content="Tree Planting Campaign" img="/img/treeplanting.jpg"></hoverable-element> was also introduced during this decade. Alongside this campaign, public spaces were adorned with abundant lush greenery on top of the newly cleaned environment.</p>
+
+<p>The massive clean-ups also saw the eradication of informal street hawking. Hawking became a licensed business that is collectively housed under the hawker centres that we see today. Concurrent to this cleanliness movement was the attention to <hoverable-element content="food hygiene education campaigns" img="/img/43_.jpg"></hoverable-element> that inculcated washing your hands before consuming food and using clean culteries and tableware.</p>
+
+<p>By the 1990s, environmental campaigns morphed beyond general cleanliness ideals with the launch of <hoverable-element content="The Singapore Green Plan" img="/img/53_.jpg"></hoverable-element> in 1992, and the start of the yearly Clean and Green Week campaign. Sustainability and environmental awareness goals such as the clichéd ‘reduce, reuse, recycle’ were introduced to discourage Singaporeans from wasteful consumption and mindful disposal of refuse. In part, this paralleled the global green movement that manifested in international cooperative efforts like The Earth Summit in Rio de Janeiro in 1992. </p>
+
+<p>Environmental campaigns also reflected events on the ground that are affecting the masses. The 2003 SARS outbreak in Singapore saw the launch of <hoverable-element content="Singapore OK" img="/img/70_.jpg"></hoverable-element>  as part of the "We Care.We’re OK" campaign. It was a massive public education campaign to continuously remind Singaporeans on personal hygiene at home, in school, in public areas of high footfalls such as <hoverable-element content="hawker centres and public toilets" img="/img/66_.jpg"></hoverable-element>. This campaign rallied solidarity among Singaporeans, appealing for individuals to do their part to fight against the common enemy, SARS.</p>
+
+<p>Similarly, the spike in the dengue cases in the early 2000s mobilised anti-dengue campaigns that advocated <hoverable-element content="10-minute Mozzie Wipe-out" img="/img/75_.jpg"></hoverable-element>. Posters warned Singaporeans of dangers of the dengue hemorrhagic fever from unintentionally breeding the Aedes mosquitos in their homes and work spaces. <hoverable-element content="“If they breed, you bleed” " img="/img/85_.jpg"></hoverable-element>posters are often seen in the lift lobbies of public housing blocks and offices to remind Singaporeans to <hoverable-element content="“just tip”" img="/img/85_.jpg"></hoverable-element> stagnant waters.</p>
+</div>
+
+<!-- Environment graphic -->
+<div class = environmentsection>
+
+
+<div id = "envposter" class="ui two column grid">
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="/img/5.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="/img/6.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="/img/7.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="/img/8.jpg">
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 </div>
+
+
+<!-- Script to hover and reveal posters -->
+<script type= "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.common.dev.js"></script>
+<script src="js/hoverable.js"></script>
+<script type= "text/javascript">
+
+var vm = new Vue({
+  el: '#container',
+  components: {
+    "hoverable-element": hoverableVar
+  },
+  data () {
+    return {
+    hover: false,
+    };
+}})
+
+</script>
+
+
+<script src="js/env.js"></script>
+<!-- <script src="js/main.js"></script>
+ --><script src="js/all.js"></script>
+
+
+</body>
+</html>
+
 
 <!-- <div class="ui five item secondary menu" id="filters">
 
@@ -93,22 +181,19 @@ Singapore is the ‘Campaign City’. In less than 55 years of independence, Sin
 </div>
 
  -->
-<!-- <script src="js/main.js"></script>
- -->
- <script src="js/all.js"></script>
 
-<div class = "content">
-<p>After poring over thousands of questions, we’ve identified recurring concerns voiced by Dear Abby readers. Let’s focus on some of the most debated topics from the past half-century: sex, religion, and LGBTQ issues.</p>
-
+ <!-- <div class="ui five item secondary menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item" href = "population.html">
+    Population
+  </a>
+  <a class="item">
+    Health
+  </a>
+  <a class="item">
+    Environment
+  </a>
 </div>
-
-<section>
-<h2>Clean and Green, Singapore!</h2>
-
-<script src="js/env.js"></script>
-
-
-</section>
-
-</body>
-</html>
+ -->

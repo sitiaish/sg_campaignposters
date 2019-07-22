@@ -4,6 +4,7 @@ var width_ = 600 - margin_.left - margin_.right,
     height_ = 400 - margin_.top - margin_.bottom;
 
 var chart = d3.select("body")
+  .select(".environmentsection")
   .append("svg")
   .attr("id", "envchart")
   .attr("width", width_ + margin_.left + margin_.right)
