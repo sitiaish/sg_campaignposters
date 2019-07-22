@@ -65,6 +65,7 @@ body {
   top: 200px;
   right: 120px;
   width: 200px;
+  z-index: -9999;
 }
 
 #posterSide img{
