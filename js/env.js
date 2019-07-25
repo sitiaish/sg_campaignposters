@@ -18,8 +18,6 @@ d3.json("env.json").then(function(data) {
       .key(d => d.decade)
       .entries(data)
 
-  console.log(decadeEnv)
-
 // appending the the step for each stack
     decadeEnv.forEach(decade => {
       let total = 0
@@ -125,7 +123,5 @@ let legendenv = chart.selectAll(".legend")
 });
 
 // decadeEnv[0].values[0].imgfull[0]
-
 // decadeEnv[0].key
-
 // decadeEnv[0].values[0].subcat
