@@ -98,11 +98,17 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 </div>
 
 <!-- Environment graphic -->
-<div class = environmentsection>
+<div class = "environmentsection">
 
-
-<div id = "envposter" class="ui two column grid">
-  <div class="column">
+<div class="ui six column grid">
+  <div class="column" v-for="image in envGallery">
+    <div class="ui fluid card">
+      <div class="image">
+        <img :src="image">
+      </div>
+    </div>
+  </div>
+  <!-- <div class="column">
     <div class="ui fluid card">
       <div class="image">
         <img src="/img/5.jpg">
@@ -129,10 +135,11 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
         <img src="/img/8.jpg">
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 </div>
 
+<!-- this is to load all the photos -->
 <div id = "photoload" v-for="n in 304">
     <img v-bind:src="`./img/${n}.jpg`">
 </div>
@@ -140,7 +147,6 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 
 </div>
 
-<!-- this is to load all the photos -->
 
 
 <!-- Script to hover and reveal posters -->
@@ -156,6 +162,7 @@ var vm = new Vue({
   data () {
     return {
     hover: false,
+    envGallery: []
     };
 }})
 
