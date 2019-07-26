@@ -1,8 +1,8 @@
 //Load in poster data
-d3.json("poster.json").then(function(data) {
+d3.json("health2.json").then(function(data) {
 	
 	//container
-	wrappper = d3.select("body")
+	wrappper = d3.select(".healthsection")
 	.append("div")
 	.attr("id", "gridwrapper")
 
@@ -10,47 +10,63 @@ d3.json("poster.json").then(function(data) {
 	gridsquare = wrappper
    .append("div")
    .attr("id", "grid")
-   .attr("class", "gridsquare");
+   .attr("class", "gridsquare") 
 
-   //append the posters in each grid 
-   chars = gridsquare
-    .selectAll("div")
-    .data(data.posters)
-    .enter()
+  //append the posters in each grid 
+  chars = gridsquare
+  .selectAll("div")
+  .data(data)
+  .enter()
+  .append("div")
+  .attr("class", "char")
+  .style("border", "3px solid #535c68")
+  .style("background-image", d =>'url("'+d.img+'")')
+  .on("mouseover", showCat)
+  .on("mouseout", hideCat)
+
+
+  content = chars
     .append("div")
-    .attr("class", "char")
-    .style("background-color", "steelblue")
-   	.on("click", info)
-   	.on("mouseover", clicked);
+    .attr("class", "charContent")
+    .append("h2")
+    .text(d => d.subcat)
+    .style("display", "none")
 
-   	//put in the content in the box
-   	content = chars
-   		.append("div")
-   		.attr("class", "charContent")
+  chars
+   .filter(function(d){ return d.count > 0; })
+   .classed("size1", true)
+   .filter(function(d){ return d.count > 10; })
+   .classed("size1", false)
+   .classed("size3", true)
+   .filter(function(d){ return d.count > 20; })
+   .classed("size1", false)
+   .classed("size3", false)
+   .classed("size4", true)
+   .filter(function(d){ return d.count > 30; })
+   .classed("size4", false)
+   .classed("size1", false)
+   .classed("size3", false)
+   .classed("size5", true)
+  ;
 
-	d3.select("#campaignType").on("click", function () {
-      chars.sort(function(a, b) { 
-         return d3.descending(b["year"], a["year"]);
-      });
-      chars.classed("open", false);
-      chars.style("grid-row-start", "auto");
-      chars.style("grid-column-start", "auto");
-   });
-})
+});
 
 // Create Event Handlers for mouse
-function clicked() { 
+function showCat() { 
     d3.select(this)
-      .style("background-color", "red");
-}
+      .style("width", "105%")
+      .style("height", "105%")
+      .style("border", "3px solid #eb4d4b")
+      .select(".charContent > h2")
+      .style("display", "block")
 
-function info(d, i){
-	if(this.className.split(' ').indexOf('open') > -1 ){
-	 d3.select(this).classed("open", false);
-	}
-	else{
-	    d3.selectAll(".char").classed("open", false);
-	    d3.select(this).classed("open", true);
-	}
-}
-
+};
+      
+function hideCat() { 
+    d3.select(this)
+      .style("width", "100%")
+      .style("height", "100%")
+      .style("border", "3px solid #535c68")
+      .select(".charContent > h2")
+      .style("display", "none")
+};

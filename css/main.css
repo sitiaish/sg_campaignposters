@@ -48,15 +48,16 @@ body, .six{
 }
 
 .hoverableThing {
-  color: #009432;
+  background-color: #A3CB38;
+  color: white;
   font-weight: 700;
   cursor: pointer;
 }
 
 .hoverableThing:hover {
-  background-color: #A3CB38;
-  color: white;
-  font-size: 19px;
+  color: #009432;
+  background-color: #f1f2f6;
+
 }
 
 /*Posters at the side that appears on hover*/
@@ -77,99 +78,6 @@ body, .six{
   display: none;
 }
 
-
-.gridsquare{
-   display: grid;
-   grid-gap: 2px;
-   grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
-   grid-auto-rows: 100px;
-   grid-auto-flow: dense;
-}
-
-.char {
-   border-radius: 2px;
-   padding: 0.5em;
-   background-color: white;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   position: relative;
-}
-
-.charContent {
-   text-align: center;
-   position: absolute;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   margin: auto;
-}
-
-.char h2 { 
-   display: inline-block;
-   background-color:rgba(28,28,28,1); 
-   font-size: 60%;
-   line-height: auto;
-   color:rgba(210,210,210,1); 
-   padding: 3px 8px 3px 8px;
-}
-
-#filters{
-    width: 50%;
-    background-color: grey;
-    margin-bottom: 10px;
-}
-
-.open {
-   grid-column-end: span 3;
-   grid-row-end: span 2;
-}
-
-.char h3 { 
-   font-size: 130%;
-   color:rgba(210,210,210,1);
-   margin-top: 2px;
-   margin-bottom: 6px;
-}
-.char h4 { 
-   font-size: 80%;
-   color:rgba(202,173,45,1);
-   margin-top: 2px;
-   margin-bottom: 2px;
-}
-.details {
-   display: none;
-   line-height: 80%;
-   position: absolute;
-   left: 10%;
-   right: 10%;
-   bottom: 0;
-   top: 60px;
-   margin: auto;
-   text-align: left;
-}
-.details .bio{
-   font-size: 110%;
-   text-align: left;
-}
-.details span{
-   font-size: 100%;
-   color:rgba(210,210,210,1);
-   text-align: left;
-}
-
-/*When you press open the square*/
-.open .details {
-   display: block;
-   height: 100%;
-}
-.open .charContent{
-   position: relative;
-   width: 100%;
-   height: 100%;
-   background-color:rgba(28,28,28,0.8); 
-}
-
 #allposters{ 
   width: 1100px;
   margin-left: -160px;
@@ -183,14 +91,9 @@ div.tooltip {
     height: 150px;
 }
 
-.titleBig{
-  position: relative;
-  top: -50px;
-  left: 20px;
-}
-
 section{
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 div.envtooltip { 
@@ -206,25 +109,23 @@ div.envtooltip {
     pointer-events: none;     
 }
 
-
-.environmentsection {
-  width: 1000px;
-}
-
-#envchart {
-  flex: 0 0 56%;
-}
-
-#envposter{
-  background-color: steelblue;
-  width: 300px;
-  margin-top: 10px;
-}
-/*.grid {
-padding-top: 100px;
- flex: 1;
-}*/
-
-#gridwrapper{
+#popdesc, #envdesc{
   width: 200px;
+  height:400px;
+  float:right;
+  padding-top: 50px;
 }
+
+#popchart, #envchart{
+  float: left;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 7px solid #f6e58d;
+  border-radius: 2px;
+} 

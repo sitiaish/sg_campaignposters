@@ -1,0 +1,93 @@
+[
+{
+    "subcat": "Smoking",
+    "count": 36,
+    "img": "./img/144.jpg"
+  },
+  {
+    "subcat": "Abortion",
+    "count": 1,
+    "img": "./img/173.jpg"
+  },
+  {
+    "subcat": "Aids",
+    "count": 18,
+    "img": "./img/181.jpg"
+  },
+  {
+    "subcat": "Eyecare",
+    "count": 1,
+    "img": "./img/230.jpg"
+  },
+  {
+    "subcat": "Safety",
+    "count": 1,
+    "img": "./img/151.jpg"
+  },
+  {
+    "subcat": "Blooddonation",
+    "count": 2,
+    "img": "./img/192.jpg"
+  },
+  {
+    "subcat": "Publicity Posters",
+    "count": 24,
+    "img": "./img/196.jpg"
+  },
+  {
+    "subcat": "Breastfeeding",
+    "count": 2,
+    "img": "./img/143.jpg"
+  },
+  {
+    "subcat": "Healthy Diet",
+    "count": 17,
+    "img": "./img/278.jpg"
+  },
+  {
+    "subcat": "Children",
+    "count": 4,
+    "img": "./img/231.jpg"
+  },
+  {
+    "subcat": "Mental Wellness",
+    "count": 5,
+    "img": "./img/136.jpg"
+  },
+  {
+    "subcat": "Dental Care",
+    "count": 25,
+    "img": "./img/105.jpg"
+  }, 
+  {
+    "subcat": "Service",
+    "count": 4,
+    "img": "./img/160.jpg"
+  },
+  {
+    "subcat": "Diseases",
+    "count": 34,
+    "img": "./img/157.jpg"
+  },
+  {
+    "subcat": "Healthy Lifestyle",
+    "count": 14,
+    "img": "./img/168.jpg"
+  },
+ {
+    "subcat": "Sars Education",
+    "count": 4,
+    "img": "./img/258.jpg"
+  },
+  {
+    "subcat": "Spitting",
+    "count": 3,
+    "img": "./img/158.jpg"
+  }, 
+  {
+    "subcat": "Personal Hygiene",
+    "count": 5,
+    "img": "./img/280.jpg"
+  }
+
+]

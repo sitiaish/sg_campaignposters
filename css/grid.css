@@ -1,0 +1,66 @@
+/*CSS for the grids*/
+
+.gridsquare{
+   display: grid;
+   grid-gap: 7px;
+   grid-template-columns: repeat(auto-fill, minmax(60px,1fr));
+   grid-auto-rows: 80px;
+}
+
+.char {
+   border-radius: 2px;
+   padding: 0.5em;
+   background-color: white;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.charContent {
+   text-align: center;
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+}
+
+.char h2 { 
+   display: inline-block;
+   background-color:#eb4d4b; 
+   font-size: 60%;
+   line-height: auto;
+   color:#ffffff; 
+   padding: 3px 8px 3px 8px;
+}
+
+.size1{
+ grid-column-end: span 2;
+ grid-row-end: span 1;
+ background-color: purple;
+}
+.size1 h2{
+ font-size: 80%;
+}.size3 {
+ grid-column-end: span 2;
+ grid-row-end: span 2;
+ background-color: blue;
+}
+.size3 h2{
+ font-size: 100%;
+}.size4 {
+ grid-column-end: span 3;
+ grid-row-end: span 2;
+ background-color: orange;
+}
+.size4 h2{
+ font-size: 120%;
+}.size5 {
+ grid-column-end: span 3;
+ grid-row-end: span 3;
+ background-color: red;
+}
+.size5 h2{
+ font-size: 130%;
+}

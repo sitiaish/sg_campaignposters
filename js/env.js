@@ -28,7 +28,6 @@ d3.json("env.json").then(function(data) {
       decade.total = total
     })
 
-    //console.log(decadeEnv[0].values)
 
 //building the scale
     let yScale = d3.scaleLinear()
@@ -74,6 +73,7 @@ d3.selectAll(".envsubcat")
         d3.select(this)
         .attr("stroke","#009432")
         .attr("stroke-width", 4)
+        .raise()
         })          
     .on("mouseout", function(d) {   
         div.transition()    
@@ -85,8 +85,6 @@ d3.selectAll(".envsubcat")
 
 d3.selectAll(".envsubcat")
   .on("mouseover.posters", d => vm.envGallery = d.imgfull)
-
-
 
 
 // flipping the chart because i am noob

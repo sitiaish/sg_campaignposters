@@ -28,6 +28,7 @@ text {
 <!-- CSS for D3 and Semantic UI -->
 <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
 
 <!-- D3 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js"></script>
@@ -79,6 +80,7 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 <div id = "allposters"></div>
 
 <!-- Environment Posters -->
+<section>
 <div class = "content">
 <h4 class = "sectiontitle">Clean and Green, That’s My Singapore</h4>
 
@@ -100,6 +102,10 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 <!-- Environment graphic -->
 <div class = "environmentsection">
 
+<div id="envdesc">
+  <hr>
+  <h4>Hover over the coloured boxes</h4></div>
+
 <div class="ui six column grid">
   <div class="column" v-for="image in envGallery">
     <div class="ui fluid card">
@@ -109,22 +115,48 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
     </div>
   </div>
 </div>
+
+
+</div>
+</section>
+
+
+<!-- Population Write-Up -->
+<section>
+<div class = "content">
+<h4 class = "sectiontitle">Stop at Two...Wait! Have Three or More, If You Can</h4>
+
+<p>How iconic is the “Stop at Two” policy? </p>
+<p>Answer: Very. Because my grandmother (who mothered 5 children) recalled being given “Two is Enough” themed calendars to hang on her living room wall with each trip to the doctors in the 1970s. </p>
+<p>Singapore’s two-child policy started in 1972, unveiled to the public during that year’s National Family Planning Campaign.</p>
 </div>
 
-<!-- Health graphic -->
+<!-- Population graphic -->
 <div class = "populationsection">
 
+<div id="popdesc">
+  <hr>
+  <h4>{{ phase }}</h4></div>
+</div>
+</section>
+
+
+<!-- Health Write-Up -->
+<section>
+<div class = "content">
+<h4 class = "sectiontitle">Health Stuff</h4>
 </div>
 
+<!-- Population graphic -->
+<div class = "healthsection">
+</div>
+</section>
+
+</div>
 <!-- this is to load all the photos -->
-<div id = "photoload" v-for="n in 304">
+<!-- <div id = "photoload" v-for="n in 304">
     <img v-bind:src="`./img/${n}.jpg`">
-</div>
-
-
-</div>
-
-
+</div> -->
 
 <!-- Script to hover and reveal posters -->
 <script type= "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.common.dev.js"></script>
@@ -139,39 +171,23 @@ var vm = new Vue({
   data () {
     return {
     hover: false,
-    envGallery: []
+    envGallery: [],
+    phase: "Hover over the coloured boxes!"
     };
 }})
 
 </script>
 
-<script src="js/pop.js"></script>
+<script src="js/population.js"></script>
 <script src="js/env.js"></script>
-<!-- <script src="js/main.js"></script>-->
 <script src="js/all.js"></script>
+<script src="js/health.js"></script>
+<script src="js/main.js"></script>
 
 
 </body>
 </html>
 
-
-<!-- <div class="ui five item secondary menu" id="filters">
-
-  <a id="orderAppearances" class="item">
-    decade
-  </a>
-  <a id="campaignType" class="item">
-    campaign type
-  </a>
-  <a id="orderFirst" class="item">
-    visual type
-  </a>
-  <a id="orderName" class="item">
-    colors
-  </a>
-</div>
-
- -->
 
  <!-- <div class="ui five item secondary menu">
   <a class="active item">
