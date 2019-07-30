@@ -14,8 +14,8 @@ h1{
   font-family: 'Playfair Display', serif;
 }
 
-body, .six{
-    padding-top:50px;
+body, .seven{
+    padding-top:70px;
     width: 800px;
     margin: 0 auto;
     text-align: center;
@@ -24,9 +24,20 @@ body, .six{
     background-color: white;
 }
 
+.five{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+ }
+
 .content p{
     font-family: 'Tinos', serif;
-    line-height: 1.7;
+    line-height: 1.9;
     font-size: 18px;
     text-align: left;
 }
@@ -48,7 +59,7 @@ body, .six{
 }
 
 .hoverableThing {
-  background-color: #A3CB38;
+  background-color: #10ac84;
   color: white;
   font-weight: 700;
   cursor: pointer;
@@ -87,13 +98,13 @@ body, .six{
 div.tooltip { 
     position: absolute;     
     text-align: center;     
-    width: 500px;          
+    width: 400px;          
     height: 150px;
 }
 
 section{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 30px;
+  margin-top:30px;
 }
 
 div.envtooltip { 
@@ -113,10 +124,14 @@ div.envtooltip {
   width: 200px;
   height:400px;
   float:right;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
-#popchart, #envchart{
+#popdesc img{
+  height:220px;
+}
+
+#popchart, #envchart, #populationSVG{
   float: left;
 }
 
@@ -129,3 +144,79 @@ hr {
   border: 7px solid #f6e58d;
   border-radius: 2px;
 } 
+
+#poplongdescription{
+  margin: 30px 50px 30px 60px ;
+  text-align: left;
+  clear: both;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  width: 90%;
+  height: 100px;
+  padding: 10px;
+}
+
+.small { font: italic 13px sans-serif; fill :#2f3640;)
+}
+.heavy { font: bold 30px sans-serif; }
+.medium { font: italic 16px sans-serif; fill: #353b48 }
+.Rrrrr { font: italic 25px serif; fill: #2f3542; }
+
+#populationSVG{
+  width: 60%;
+  padding-bottom: 40px;
+  margin-left: -100px;
+  margin-top: 20px;
+}
+
+#populationSVGposters{
+  float:right;
+  margin-right: -100px;
+  width: 500px;
+}
+
+.keywordDesc{
+  clear:both;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-align: left;
+}
+
+.graphic{
+  margin: 50px 0;
+}
+
+#three{
+  background-color:  rgb(255,0,0, 0.1);
+}
+
+#two{
+  background-color: rgb(34,166,179, 0.1);
+}
+
+#navbar {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  transition: top 0.4s; /* Transition effect when sliding down (and up) */
+  background-color: white;
+  width: 53%;
+  padding: 10px;
+  z-index: 9999;
+
+}
+
+/* Style the navbar links */
+
+/*#navbar a:hover {
+  background-color: red;
+  color: black;
+}
+*/
+
+
+
+
+
+
+

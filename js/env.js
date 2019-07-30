@@ -11,7 +11,6 @@ var chart = d3.select("body")
   .attr("width", width_ + margin_.left + margin_.right)
   .attr("height", height_ + margin_.top + margin_.bottom)
 
-
 d3.json("env.json").then(function(data) {
 
   let decadeEnv = d3.nest()
@@ -123,3 +122,4 @@ let legendenv = chart.selectAll(".legend")
 // decadeEnv[0].values[0].imgfull[0]
 // decadeEnv[0].key
 // decadeEnv[0].values[0].subcat
+

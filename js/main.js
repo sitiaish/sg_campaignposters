@@ -54,9 +54,9 @@ d3.json("health2.json").then(function(data) {
 // Create Event Handlers for mouse
 function showCat() { 
     d3.select(this)
-      .style("width", "105%")
-      .style("height", "105%")
-      .style("border", "3px solid #eb4d4b")
+      .style("width", "103%")
+      .style("height", "103%")
+      .style("border", "3px solid #222f3e")
       .select(".charContent > h2")
       .style("display", "block")
 

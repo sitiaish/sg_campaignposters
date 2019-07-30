@@ -70,8 +70,8 @@ d3.json("test.json").then(function(data) {
 	    .attr("class", "tooltip")				
 	    .style("opacity", 0)
 		.style("left", "500px")		
-		.style("top", "1375px")
-	    .style("z-index", 9999)
+		.style("top", "1750px")
+	    .style("z-index", 1)
 
 	divBox.append("img")
 		.attr("class", "thumbnail")
@@ -82,6 +82,8 @@ d3.json("test.json").then(function(data) {
 		.attr("class", "titleBig")
 		.style("display", "none")
 		.style("width", "40%")
+		.style("margin-left", "30px")
+
 
 // on click change color
 	allchart.on('click', catColor)
@@ -157,6 +159,7 @@ function toolTipBox(posterUrl, subcat) {
 		.select("img")
 		.attr("src", posterUrl)
 		.style("display", "inline")
+
 
 	d3.select(".tooltip")
 		.style("opacity", 1)
