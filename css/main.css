@@ -5,8 +5,42 @@ html, body, div, img {
     margin: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+}
+
+#photoload{
+  display: none;
+}
+
+body{
+  padding-top:70px;
+  width: calc(100% - 50%);
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #171717;
+  background-color: white;
+}
+
+#navbar {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  transition: top 0.4s; /* Transition effect when sliding down (and up) */
+  background-color: white;
+  width: 53%;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.header h3{
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
+}
+
+.subheader{
+  font-size: 55px;
+  font-family: 'Playfair Display', serif;
 }
 
 h1{
@@ -14,141 +48,26 @@ h1{
   font-family: 'Playfair Display', serif;
 }
 
-.subheader{
-  font-size: 55px;
-  font-family: 'Playfair Display', serif;
-  margin-top: 20px;
+.banner{
+  width: 660px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
-
-body, .seven{
-    padding-top:70px;
-    /*width: 800px;*/
-    width: calc(100% - 700px);
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 100px;
-    color: #171717;
-    background-color: white;
-}
-
-.five{
-    width: 800px;
-}
-
-.content{
-    width: 90%;
-    margin: 0 auto;
- }
 
 .content p{
-    font-family: 'Tinos', serif;
-    line-height: 1.9;
-    font-size: 18px;
-    text-align: left;
+  font-family: 'Tinos', serif;
+  line-height: 1.9;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .sectiontitle{
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.8;    
-    font-size: 21px;
-    font-weight: 700;
-    text-align: left;
-}
-
-.header h3{
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.8;
-}
-
-.banner{
-  width: 80%;
-  margin-bottom: 20px;
-}
-.hoverableThing {
-  background-color: #10ac84;
-  color: white;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;    
+  font-size: 21px;
   font-weight: 700;
-  cursor: pointer;
-}
-
-.hoverableThing:hover {
-  color: #009432;
-  background-color: #f1f2f6;
-
-}
-
-/*Posters at the side that appears on hover*/
-#posterSide{
-  position: fixed;
-  top: 200px;
-  right: 120px;
-  width: 200px;
-  z-index: -9999;
-  /*opacity*/
-}
-
-#posterSide img{
-  width: 200px;
-  border: 5px solid #73AD21;
-}
-
-#photoload{
-  display: none;
-}
-
-#allposters{ 
-  width: 1100px;
-  margin-left: -120px;
-
- }
-
-div.tooltip { 
-    position: absolute;     
-    text-align: center;     
-    width: 400px;          
-    height: 150px;
-}
-
-section{
-  padding-top: 30px;
-  margin-top:30px;
-}
-
-div.envtooltip { 
-    position: absolute;     
-    text-align: center;     
-    width: 80px;          
-    height: 80px;         
-    padding: 1px;       
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.8;
-    font-size: 20;    
-    background: lightsteelblue;
-    pointer-events: none;     
-}
-
-#popdesc, #envdesc{
-  width: 250px;
-  height: 400px;
-  float:right;
-  padding-top: 20px;
-}
-
-#popdesc img{
-  height:220px;
-}
-
-#popchart, #envchart, #populationSVG{
-  float: left;
-}
-
-.populationsection{
-  width: 850px;
-  margin-left: -50px;
-  margin-top: 20px;
+  text-align: left;
 }
 
 hr { 
@@ -161,6 +80,84 @@ hr {
   border-radius: 2px;
 } 
 
+section{
+  padding-top: 30px;
+  margin-top:30px;
+}
+
+/*Dataset Chart*/
+/*SVG graph and on hover posters */
+
+#dataposter{ 
+  position:relative; 
+}
+
+div.tooltip { 
+  position: absolute;     
+  text-align: center;     
+  width: 400px;          
+  height: 150px;
+  top: 80px;
+  left: 200px;
+}
+
+/*Env Posters - Hoverable*/
+.hoverableThing {
+  background-color: #10ac84;
+  color: white;
+  font-weight: 700;
+  cursor: default;
+}
+
+.hoverableThing:hover {
+  color: #009432;
+  background-color: #f1f2f6;
+}
+
+#posterSide{
+  position: fixed;
+  top: 200px;
+  right: 100px;
+  width: 200px;
+  z-index: -9999;
+}
+
+#posterSide img{
+  width: 200px;
+  border: 5px solid #73AD21;
+}
+
+/*ENV BAR CHART*/
+
+.environmentsection, .populationsection{
+  height: 400px;
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#envChart, #envDesc, #popdesc, #popChart{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#envGal{
+  padding: 30px 0;
+  width: 750px;
+  margin: 0 auto;
+}
+
+/* The poster box for population chart*/
+#popdesc{
+  width: 250px;
+  height: 400px;
+  padding-top: 20px;
+}
+
+#popdesc img{
+  height:220px;
+}
+
 #poplongdescription{
   margin: 30px 30px 30px 30px ;
   text-align: left;
@@ -172,8 +169,8 @@ hr {
   padding: 10px;
 }
 
-.small { font: italic 13px sans-serif; fill :#2f3640;)
-}
+/*Keyword CSS*/
+.small { font: italic 13px sans-serif; fill :#2f3640;)}
 .heavy { font: bold 30px sans-serif; }
 .medium { font: italic 16px sans-serif; fill: #353b48 }
 .Rrrrr { font: italic 25px serif; fill: #2f3542; }
@@ -184,7 +181,7 @@ hr {
   padding-bottom: 40px;
   margin-left: -120px;
   margin-top: 20px;
-
+  float: left;
 }
 
 #populationSVGposters{
@@ -198,7 +195,6 @@ hr {
   width: 530px;
   margin: 50px -50px 20px 0;
 }
-
 
 #test{
   clear:both;
@@ -228,38 +224,16 @@ hr {
   line-height: 1.7em;
 }
 
-
 .keywordDesc{
   background-color: steelblue;
 }
 
 .graphic{
-  margin: 50px 0;
+  margin: 50px auto;
   background-color: rgb(255,0,0, 0.05);
   height: 250px;
   width: 900px;
 }
-
-#three{
-  background-color:  rgb(255,0,0, 0.1);
-}
-
-#two{
-  background-color: rgb(34,166,179, 0.1);
-}
-
-#navbar {
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  transition: top 0.4s; /* Transition effect when sliding down (and up) */
-  background-color: white;
-  width: 53%;
-  padding: 10px;
-  z-index: 9999;
-}
-
-
-
 
 
 

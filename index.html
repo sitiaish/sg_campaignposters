@@ -26,6 +26,7 @@ text {
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
 <!-- CSS for D3 and Semantic UI -->
+
 <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/grid.css">
@@ -41,34 +42,24 @@ text {
 
 <body>
 
-<div id ="container" class = "container">
+<div id ="container">
 
+<!-- Nav Bar -->
 <div class="ui secondary pointing menu" id = "navbar">
   <a class="active item" href = "#theIntro" id="theIntro-link">
-    Intro
-  </a>
+    Intro</a>
   <a class="item" href = "#theDataset" id="theDataset-link">
-    The Data
-  </a>
+    The Data</a>
   <a class="item" href = "#theEnvironment" id="theEnvironment-link">
-    Environment
-  </a>
+    Environment</a>
   <a class="item" href = "#thePopulation" id="thePopulation-link">
-    Population 
-  </a>
+    Population</a>
   <a class="item" href = "#theHealth" id="theHealth-link">
-    Health
-  </a>
+    Health</a>
   <div class="right menu">
     <a class="ui item">
-    About
-    </a>
-  </div>
+    About</a></div>
 </div>
-
-
-<!-- The side posters to show on hover -->
-<div style="display:none;" id = "posterSide"><img src="/img/20.jpg"></div>
 
 <section id = "theIntro">
 
@@ -105,17 +96,17 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 <p>There are 302 posters in the dataset. I specifically focused on three broad categories: health, environment and population-control.Each grid on represents a campaign poster from any one of the categories above. These posters are courtesy of the National Archive of Singapore’s (NAS) digital database. </p>
 </div>
 
-<!-- the first graphic: all the posters put here-->
-<div id = "allposters"></div>
-
+<!--all the posters put here-->
+<div id = "dataposter"></div>
 </section>
 
 <!-- Environment Posters -->
 <section id = "theEnvironment">
 <h2 class = "subheader">Environment</h2>
 <img class = "banner" src = "./img/env_3.png">
-<div class = "content">
 <h4 class = "sectiontitle">Clean and Green, That’s My Singapore</h4>
+
+<div class = "content">
 
 <p>Singapore prides itself on being the “City in the Garden” – and it very well stands by that image. The city is permeated with greenery from its meticulously planted shrubs along the roads and walkways to the development of green spaces in various neighbourhood heartlands.</p>
 
@@ -132,10 +123,15 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 <p>Similarly, the spike in the dengue cases in the early 2000s mobilised anti-dengue campaigns that advocated <hoverable-element content="10-minute Mozzie Wipe-out" img="./img/73.jpg"></hoverable-element>. Posters warned Singaporeans of dangers of the dengue hemorrhagic fever from unintentionally breeding the Aedes mosquitos in their homes and work spaces. <hoverable-element content="“If they breed, you bleed” " img="./img/85.jpg"></hoverable-element>posters are often seen in the lift lobbies of public housing blocks and offices to remind Singaporeans to <hoverable-element content="“just tip”" img="./img/87.jpg"></hoverable-element> stagnant waters.</p>
 </div>
 
+<!-- The side posters to show on hover -->
+<div style="display:none;" id = "posterSide"><img src="/img/20.jpg"></div>
+
 <!-- Environment graphic -->
 <div class = "environmentsection">
 
-<div id="envdesc">
+<div id="envChart"></div>
+
+<div id="envDesc">
   <hr>
   <h4>Hover over the coloured boxes!</h4>
   <h2 class = "subheader"></h2>
@@ -143,7 +139,11 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
   <h2 id = "h3subcat"></h2>
 </div>
 
-<div class="ui five column grid">
+</div>  
+
+<!-- Environment Posters -->
+
+<div class="ui five column grid" id="envGal">
   <div class="column" v-for="image in envGallery">
     <div class="ui fluid card">
       <div class="image">
@@ -153,8 +153,6 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
   </div>
 </div>
 
-
-</div>
 </section>
 
 
@@ -162,9 +160,9 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 <section id = "thePopulation">
 <h2 class = "subheader">Population</h2>
 <img class = "banner" src = "./img/pop.png">
-<div class = "content">
 <h4 class = "sectiontitle">Stop at Two...Wait! Have Three or More, If You Can</h4>
 
+<div class = "content">
 <p>How iconic is the “Stop at Two” policy? </p>
 <p>Answer: Very. Because for one, it is evidence for state intervention in Singaporean's private matters. And today, my grandmother who mothered 5 children recalled being given “Two is Enough” themed calendars to hang on her living room wall with each trip to the doctors in the 1970s.</p>
 

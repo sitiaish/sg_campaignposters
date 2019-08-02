@@ -1,10 +1,16 @@
 let allchart = d3.select("body")
-		.select("#allposters")
+		.select("#dataposter")
 		// .append('div')
 		// .attr('class', 'graphic')
 		.append('svg')
 		.attr('width', 1100)
 		.attr('height', 620)
+		.attr("id", "dataSVG")
+		.style("display", "block")
+		.style("margin-left", "-100px")
+
+
+
 		// .attr('style', 'border: 2px solid black; ')
 
 const width = +allchart.attr('width')
@@ -66,11 +72,11 @@ d3.json("test.json").then(function(data) {
 
 // the on hover boxes
 
-	let divBox = d3.select("body").append("div")	
+	let divBox = d3.select("#dataposter").append("div")	
 	    .attr("class", "tooltip")				
 	    .style("opacity", 0)
-		.style("left", "550px")		
-		.style("top", "2040px")
+		// .style("left", "550px")		
+		// .style("top", "2040px")
 	    .style("z-index", 1)
 
 	divBox.append("img")

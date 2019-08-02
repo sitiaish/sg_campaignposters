@@ -3,8 +3,8 @@ var margin_ = {top: 20, right: 5, bottom: 20, left: 0};
 var width_ = 550 - margin_.left - margin_.right,
     height_ = 400 - margin_.top - margin_.bottom;
 
-var chart = d3.select("body")
-  .select(".environmentsection")
+var chart = d3.select("div")
+  .select("#envChart")
   .append("svg")
   .lower()
   .attr("id", "envchart")
@@ -27,7 +27,6 @@ d3.json("env.json").then(function(data) {
       decade.total = total
     })
 
-
 //building the scale
     let yScale = d3.scaleLinear()
                 .domain([0, 20])
@@ -40,11 +39,6 @@ d3.json("env.json").then(function(data) {
 // listing out the legend values
     var subcats = ["Cleanliness", "Dengue Prevention", "Food Hygiene", "Sars Education", "Sustainability", "Toilet Hygiene"]
     var envcolors = ["#10ac84", "#ee5253", "#ffbe76", "#8395a7", "#badc58", "#54a0ff"];
-
-// tooltip
-var div = d3.select("body").append("div") 
-    .attr("class", "envtooltip")       
-    .style("opacity", 0);
 
 //  draw the chart
     chart.selectAll("g.subcat")
@@ -62,18 +56,14 @@ var div = d3.select("body").append("div")
       .attr("y", d => yScale(d.startY))
 
 d3.selectAll(".envsubcat")
-    .on("mouseover.count", function(d) {    
-        div.transition()    
-        .duration(500)    
-        .style("opacity", .9);
-
-        d3.select("#envdesc > h2")
+    .on("mouseover.count", function(d) { 
+        d3.select("#envDesc > h2")
         .text(d.count)
 
-        d3.select("#envdesc > #h3subcat")
+        d3.select("#envDesc > #h3subcat")
         .text(d.subcat)
 
-        d3.select("#envdesc > h3")
+        d3.select("#envDesc > h3")
         .style("opacity", 1);  
 
         // h2.html(d.count)  
@@ -84,11 +74,7 @@ d3.selectAll(".envsubcat")
         .attr("stroke-width", 4)
         .raise()
         })          
-    .on("mouseout", function(d) {   
-        div.transition()    
-        .duration(800)    
-        .style("opacity", 0)
-
+    .on("mouseout", function(d) {
         d3.select(this)
         .attr("stroke","none")
         })

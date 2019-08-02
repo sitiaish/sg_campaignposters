@@ -20,7 +20,7 @@ d3.json("popkeywords2.json").then(function(data) {
 		d3.select("#" + data[k].id)
 			.on("mouseover.infobox", function() {
 				// d3.select("#test").classed("show", true)
-				d3.select("#threedesc").style("height", "350px");
+				d3.select("#threedesc").style("height", "420px");
 				// $('.ui.accordion').accordion()'open', keys.indexOf(k));
 			})
 			// .on("mouseout.infobox", function() {

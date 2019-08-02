@@ -5,9 +5,10 @@ var width_pop = 650 - margin_pop.left - margin_pop.right,
 
 var chart_pop = d3.select(".populationsection")
   .append("svg")
-  .attr("id", "popchart")
+  .attr("id", "popChart")
   .attr("width", 600)
   .attr("height", height_pop + margin_pop.top + margin_pop.bottom)
+  .lower()
 
 d3.json("tfr.json").then(function(data) {
 
