@@ -1,6 +1,6 @@
-var margin_ = {top: 20, right: 30, bottom: 20, left: 30};
+var margin_ = {top: 20, right: 5, bottom: 20, left: 0};
 
-var width_ = 600 - margin_.left - margin_.right,
+var width_ = 550 - margin_.left - margin_.right,
     height_ = 400 - margin_.top - margin_.bottom;
 
 var chart = d3.select("body")
@@ -64,11 +64,21 @@ var div = d3.select("body").append("div")
 d3.selectAll(".envsubcat")
     .on("mouseover.count", function(d) {    
         div.transition()    
-        .duration(200)    
-        .style("opacity", .9);    
-        div .html(d.count)  
-        .style("left", (d3.event.pageX + 10) + "px")   
-        .style("top", (d3.event.pageY - 28) + "px")
+        .duration(500)    
+        .style("opacity", .9);
+
+        d3.select("#envdesc > h2")
+        .text(d.count)
+
+        d3.select("#envdesc > #h3subcat")
+        .text(d.subcat)
+
+        d3.select("#envdesc > h3")
+        .style("opacity", 1);  
+
+        // h2.html(d.count)  
+        // .style("left", (d3.event.pageX + 10) + "px")   
+        // .style("top", (d3.event.pageY - 28) + "px")
         d3.select(this)
         .attr("stroke","#009432")
         .attr("stroke-width", 4)
@@ -76,8 +86,9 @@ d3.selectAll(".envsubcat")
         })          
     .on("mouseout", function(d) {   
         div.transition()    
-        .duration(500)    
+        .duration(800)    
         .style("opacity", 0)
+
         d3.select(this)
         .attr("stroke","none")
         })

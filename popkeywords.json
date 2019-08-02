@@ -1,34 +1,42 @@
 {
 	"girl or boy": {
 		"img": ["./img/11.jpg", "./img/12.jpg", "./img/18.jpg", "./img/19.jpg"],
-		"text": "<p>Interestingly, the posters generally feature two daughters in the two-child family unit – maybe a son and a daughter for a few, but never two sons. Some posters also headlined the “Girl or Boy, Two is Enough” slogan as a reminder of not preferring one gender to another.</p><p>One of the reasons for the high birth rate is attributed to families preferring sons over daughters. Son preference is a real phenomenon. Asian families, like those in Singapore during this phase, would prefer sons to daughters due to reasons such as lineage and traditions. As such, couples would keep trying to have children until they get a son, which contributes to the increase in birth rates during that time. </p><p>These posters also imply that it is ideal to have two daughters, perhaps as a strategy to counter prevailing preferences of sons in the society during that time. Who knows? Perhaps photographs of happy daughters might just be the subtle solution that deter couples from continuously trying for sons despite already having daughters.</p>" 
+		"text": "<hr><p>Interestingly, the posters generally feature two daughters in the two-child family unit – maybe a son and a daughter for a few, but never two sons. Some posters also headlined the “Girl or Boy, Two is Enough” slogan as a reminder of not preferring one gender to another.</p><p>One of the reasons for the high birth rate is attributed to families preferring sons over daughters. Son preference is a real phenomenon. Asian families, like those in Singapore during this phase, would prefer sons to daughters due to reasons such as lineage and traditions. As such, couples would keep trying to have children until they get a son, which contributes to the increase in birth rates during that time. </p><p>These posters also imply that it is ideal to have two daughters, perhaps as a strategy to counter prevailing preferences of sons in the society during that time. Who knows? Perhaps photographs of happy daughters might just be the nudge couples need to deter them from continuously trying for sons, despite already having daughters.</p>", 
+		"id": "girl-or-boy-text"	
 	},
 	"wait for it": {
 		"img": ["./img/16.jpg", "./img/17.jpg", "./img/18.jpg"],
-		"text": "<p>Good things come to those who wait. Or in this case, happy marriage comes to those who wait.</p><p>The ideal marriage should not be too early, should not be too rushed. This manifests in two forms: waiting to get married and waiting to bear the second kid.</p><p>Well, this would imply that teenage marriages are deem as doomed from the start. Teenage parents are “rushing into problems” before they are ready, and instead should “wait” for a happy marriage.</p><p>Underneath it all, delaying both marriage and having the second kid are measures keep the birth rate from blowing up. Well, it is logical that adult marriages have a higher success rates than teenage ones. But it also means women who choose to marry late would have babies later when their fertility isn’t at peak performance. Thus, the likelihood of having too many children decreases.</p>"
+		"text": "<hr><p>Good things come to those who wait. Or in this case, happy marriage comes to those who wait.</p><p>The ideal marriage should not be too early, should not be too rushed. This manifests in two forms: waiting to get married and waiting to bear the second kid.</p><p>Well, this would imply that teenage marriages are deem as doomed from the start. Teenage parents are “rushing into problems” before they are ready, and instead should “wait” for a happy marriage.</p><p>Underneath it all, delaying both marriage and having the second kid are measures keep the birth rate from blowing up. Well, it is logical that adult marriages have a higher success rates than teenage ones. But it also means women who choose to marry late would have babies later when their fertility isn’t at peak performance. Thus, the likelihood of having too many children decreases.</p>", 
+		"id": "wait-for-it-text"
 	},
 	"TWO": {
 		"img": ["./img/1.jpg", "./img/9.jpg", "./img/10.jpg", "./img/14.jpg", "./img/15.jpg", "./img/13.jpg"],
-		"text": "<p>Obviously, as can be seen from the title, the ideal family, consists of only two children. This is important: it creates the visual cue, imprinting into the audience minds about how a family should look like. The posters use only two children or one child– never more than two – to create the ideal family unit.</p><p>These children are always smiling happily and looking at the audience, as if creating a visual contact to further solidify this image of happiness and two-child families. Anymore would be excessive because two is already enough.</p><p>In contrast, a poster which features more than two children is associated with the idea of scarcity and inadequacy. Logically, this does makes sense because having more children would mean that they do need more material necessities.</p>"
+		"text": "<hr><p>Obviously, as can be seen from the title, the ideal family, consists of only two children. This is important: it creates the visual cue, imprinting into the audience minds about how a family should look like. The posters use only two children or one child– never more than two – to create the ideal family unit.</p><p>These children are always smiling happily and looking at the audience, as if creating a visual contact to further solidify this image of happiness and two-child families. Anymore would be excessive because two is already enough.</p><p>In contrast, a poster which features more than two children is associated with the idea of scarcity and inadequacy. Logically, this does makes sense because having more children would mean that they do need more material necessities.</p>", 
+		"id": "two-text"
 	},
 	"better &amp; more": {
 		"img": ["./img/2.jpg", "./img/3.jpg", "./img/4.jpg", "./img/5.jpg", "./img/6.jpg", "./img/7.jpg"], 
-		"text": "<p>These posters don’t romanticise marriage and child bearing, that’s for sure.</p><p>The idea of getting married and raising children is also portrayed as an arduous task, requiring immense responsibility and much commitment. Posters explicitly state the expected tangible material and intangible emotional needs that parents need to provide for their children.</p><p>Interestingly, these posters also utilise comparative verbs such as “more” and “better” to make the case for small families over larger ones.</p><p>Meaning to say that the ideal is family should be small and helmed by responsible, adult parents who can provide the basic necessities such as food, health and material wealth in order for the family to be happy and “better”.</p>"
+		"text": "<hr><p>These posters don’t romanticise marriage and child bearing, that’s for sure.</p><p>The idea of getting married and raising children is also portrayed as an arduous task, requiring immense responsibility and much commitment. Posters explicitly state the expected tangible material and intangible emotional needs that parents need to provide for their children.</p><p>Interestingly, these posters also utilise comparative verbs such as “more” and “better” to make the case for small families over larger ones.</p><p>Meaning to say that the ideal is family should be small and helmed by responsible, adult parents who can provide the basic necessities such as food, health and material wealth in order for the family to be happy and “better”.</p>", 
+		"id": "better-more-text"
 	},
 	"parents": {
 		"img": ["./img/20.jpg", "./img/21.jpg", "./img/22.jpg", "./img/27.jpg"], 
-		"text": "<p>sample</p>"
+		"text": "<p>sample</p>", 
+		"id": "parents-text"
 	}, 
 	"family time": {
 		"img": ["./img/23.jpg", "./img/24.jpg", "./img/29.jpg"], 
-		"text": "<p>sample</p>"
+		"text": "<p>sample</p>", 
+		"id": "family-time-text"
 	}, 
 	"marriage": {
 		"img": ["./img/31.jpg"], 
-		"text": "<p>sample</p>"
+		"text": "<p>sample</p>", 
+		"id": "marriage-text"
 	},
 	"children": {
 		"img": ["./img/25.jpg","./img/26.jpg", "./img/28.jpg", "./img/32.jpg"], 
-		"text": "<p>sample</p>"
+		"text": "<p>sample</p>", 
+		"id": "children-text"
 	}
 }

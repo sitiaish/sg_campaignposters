@@ -70,19 +70,21 @@ d3.json("test.json").then(function(data) {
 	    .attr("class", "tooltip")				
 	    .style("opacity", 0)
 		.style("left", "500px")		
-		.style("top", "1750px")
+		.style("top", "1700px")
 	    .style("z-index", 1)
 
 	divBox.append("img")
 		.attr("class", "thumbnail")
 		.style("display", "none")
-		.style("width", "30%")
+		.style("width", "130px")
 
 	divBox.append("h2")
 		.attr("class", "titleBig")
 		.style("display", "none")
-		.style("width", "40%")
-		.style("margin-left", "30px")
+		.style("width", "100%")
+		// .style("margin-left", "120px")
+		.style("margin-top", "0px")
+
 
 
 // on click change color
@@ -165,6 +167,6 @@ function toolTipBox(posterUrl, subcat) {
 		.style("opacity", 1)
 		.select("h2")
 		.text(subcat)
-		.style("display", "inline")
+		.style("display", "block")
 };
 

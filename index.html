@@ -19,7 +19,7 @@ text {
   
 </style>
 
-<title>An Interactive Visualisation of Singapore's National Campaign Poster </title>
+<title>A Visualisation of Singapore's National Campaign Posters </title>
 
 <!-- Font -->
 <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
@@ -44,19 +44,19 @@ text {
 <div id ="container" class = "container">
 
 <div class="ui secondary pointing menu" id = "navbar">
-  <a class="active item">
+  <a class="active item" href = "#theIntro" id="theIntro-link">
     Intro
   </a>
-  <a class="item" href = "#theDataset">
+  <a class="item" href = "#theDataset" id="theDataset-link">
     The Data
   </a>
-  <a class="item" href = "#theEnvironment">
+  <a class="item" href = "#theEnvironment" id="theEnvironment-link">
     Environment
   </a>
-  <a class="item" href = "#thePopulation">
+  <a class="item" href = "#thePopulation" id="thePopulation-link">
     Population 
   </a>
-  <a class="item" href = "#theHealth">
+  <a class="item" href = "#theHealth" id="theHealth-link">
     Health
   </a>
   <div class="right menu">
@@ -70,23 +70,24 @@ text {
 <!-- The side posters to show on hover -->
 <div style="display:none;" id = "posterSide"><img src="/img/20.jpg"></div>
 
+<section id = "theIntro">
+
 <h1 class = "header">Singapore In Posters</h1>
-<h3 class = "header">An Interactive Visualisation of <br>Singapore's National Campaign Posters from 1965 -2005</h3>
+<h3 class = "header">A Visualisation of <br>Singapore's National Campaign Posters from 1965 -2005</h3>
 <p>By  AISHAH</p>
 
-<section>
 <div class = "content">
 
 <p>National campaigns in Singapore, as defined by Tham (1986), are state initiated and inspired movements which have an organised and formal course of action, taken with the intent of arousing public awareness and influencing public behaviour. 
 Singapore is the ‘Campaign City’. In less than 55 years of independence, Singaporeans have seen a plethora of over 200 national campaigns. Just how many different types of campaigns can there possibly be in one country in that short amount of time? 
 In the words of the first Prime Minister Lee Kuan Yew, we had “campaigns to do this, campaigns to do that”.</p>
 
+<img class = "banner" src = "./img/all.png">
+
 <p>Speak good English. Two children are enough. Smile more. Do not litter. Wait have more than three children now…if you can afford it. Eat healthier and walk more. Do not smoke. 
 Who can forget Singa the Lion and his Courtesy Campaigns until his untimely resignation in 2013? Or the public education campaigns during the SARS epidemic that brought with it the catchy-but-cringe-worthy Sar-Viror rap?</p>
 
 <p>It is peculiar how we are desensitised to materials from national campaigns that accumulate within our public spaces and hence, our collective memories as Singaporeans. Quirky campaigns are part of our social fabric here in Singapore. </p>
-
-[image]
 
 <p>And with that track record of campaigns, then imagine the number of campaign posters, jingles, mascots, taglines and slogans that have been in archives since 1965 until today. 
 Old posters are quirky and fun, and garishly designed – almost like a reflection of the times of post-independent Singapore. And on the other hand, newer posters that were produced in the early 2000s are (slightly more) tasteful. I trace national campaign posters from 1965 to 2005 to see the changes and trends in the messages. At the same time, it is an alternative way to look back at the sociohistorical landscape of Singapore. Admittedly, this piece cannot hold a candle to the already established works on Singapore’s sociohistorical literature that are based on highly credible textual sources. 
@@ -99,7 +100,7 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 <!-- The Dataset -->
 <section id = "theDataset">
 <div class = "content">
-<h4 class = "sectiontitle" >The Dataset</h4>
+<h4 class = "sectiontitle" >The Data</h4>
 
 <p>There are 302 posters in the dataset. I specifically focused on three broad categories: health, environment and population-control.Each grid on represents a campaign poster from any one of the categories above. These posters are courtesy of the National Archive of Singapore’s (NAS) digital database. </p>
 </div>
@@ -111,6 +112,8 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 
 <!-- Environment Posters -->
 <section id = "theEnvironment">
+<h2 class = "subheader">Environment</h2>
+<img class = "banner" src = "./img/env_3.png">
 <div class = "content">
 <h4 class = "sectiontitle">Clean and Green, That’s My Singapore</h4>
 
@@ -134,7 +137,11 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 
 <div id="envdesc">
   <hr>
-  <h4>Hover over the coloured boxes</h4></div>
+  <h4>Hover over the coloured boxes!</h4>
+  <h2 class = "subheader"></h2>
+  <h3 style = "margin: 0; padding: 0; opacity: 0;">posters pertaining to</h3>
+  <h2 id = "h3subcat"></h2>
+</div>
 
 <div class="ui five column grid">
   <div class="column" v-for="image in envGallery">
@@ -153,6 +160,8 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 
 <!-- Population Write-Up -->
 <section id = "thePopulation">
+<h2 class = "subheader">Population</h2>
+<img class = "banner" src = "./img/pop.png">
 <div class = "content">
 <h4 class = "sectiontitle">Stop at Two...Wait! Have Three or More, If You Can</h4>
 
@@ -165,7 +174,7 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 </div>
 
 <!-- Population graphic -->
-<div class = "populationsection graphic">
+<div class = "populationsection">
 
 <div id="popdesc">
   <hr>
@@ -180,22 +189,20 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
 </div>
 
 <div class = "content">
-<p>But majority would be most familiar with the <span style="background-color: rgb(34,166,179, 0.35);"> “Stop at Two”</span> phase and <span style="background-color: rgb(255,0,0, 0.35);">“Have Three or More…If You Can Afford It”</span> phase, aptly named after the respective national population campaigns that were launched. An interesting observation from looking at the transition of the phases is how the family unit is depicted in the posters over time. The way the family is represented in all these phases hint at the ideal family that state desires. </p>
+<p>But majority would be most familiar with the “Stop at Two” phase and “Have Three or More…If You Can Afford It” phase, aptly named after the respective national population campaigns that were launched. An interesting observation from looking at the transition of the phases is how the family unit is depicted in the posters over time. The way the family is represented in all these phases hint at the ideal family that state desires. </p>
 
-<h4 class = "sectiontitle"><span style="background-color: rgb(34,166,179, 0.35); font-size: 18px;">“Stop at Two”</span></h4>
+<h4 class = "sectiontitle">“Stop at Two”</h4>
 <p>Below are key words that commonly appear in the national campaign posters during the “Stop At Two” phase. These are the most frequently occurring words in the posters that describe the ideal family in this period. </p>
 
-<p>An ideal family is small, comprises of two children that have some years between them, regardless of gender; and with two married adult parents. </p>
-<p>Hover over the words to view the relevant posters!
-</p>
+<p>An ideal family is small, comprises of two children that have some years between them, regardless of gender; and with two married adult parents. Hover over the words to view the relevant posters! They come with accompanying analyses, too!</p>
 </div>
 
 <div class = "graphic">
 <svg id = "populationSVG" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-  <text x="10" y="20" class="medium pop-keywords">better & more</text>
-  <text x="40" y="45" class="heavy pop-keywords">girl or boy</text>
-  <text x="20" y="64" class="small pop-keywords">wait for it</text>
-  <text x="80" y="78" class="Rrrrr pop-keywords">TWO</text>
+  <text x="10" y="20" class="medium pop-keywords" id="better-more-text">better & more</text>
+  <text x="40" y="45" class="heavy pop-keywords" id="girl-or-boy-text">girl or boy</text>
+  <text x="20" y="64" class="small pop-keywords" id="wait-for-it-text">wait for it</text>
+  <text x="80" y="78" class="Rrrrr pop-keywords" id="two-text">TWO</text>
 </svg>
 
 <div class="ui four column grid" id = "populationSVGposters">
@@ -207,16 +214,19 @@ Yet, we can agree that the national campaigns posters echo the issues that the s
     </div>
   </div>
 </div>
-
-<div class="keywordDesc" id="two" v-html="parapop"></div>
 </div>
 
+<div id="test" v-html="parapop">
+</div>
+
+
+
 <div class = "content">
-<h4 class = "sectiontitle"><span style="background-color: rgb(255,0,0, 0.35); font-size: 18px;">“Have Three or More…If You Can Afford It”</span></h4>
+<h4 class = "sectiontitle">“Have Three or More…If You Can Afford It”</h4>
 
 <p>If the “Two or More” phase was aggressively anti-natalist, with their abortion legalisation and financial incentives for sterilisation, this phase is the total opposite. 
-It seems that the previous anti-natalist policies worked just a little too well, given that the total replacement rate for Singapore’s population in 1986 decreased to 1.43 children per woman. This was a remarkable decrease from the recorded 4.66, twenty years ago, in 1965.</p>
-<p>Fast-forward into the future, we know now that total replacement rate has only been dismally decreasing since then. The launch of the “Have Three or More” campaign signals the start of the pro-natalist phase. During this phase, the ideal family unit and the state’s stance on family is reinvented as depicted in the campaign posters. </p>
+It seems that the previous anti-natalist policies worked just a little too well, given that the total fertility rate for Singapore’s population decreased from 4.66 in 1965 to 1.43 by 1986. This mean that within a span of 20 years, women in Singapore went from have an average of 4-5 children to only 1-2 children.</p>
+<p>And now, fast-forward into the future, we know that total fertility rate has only been dismally decreasing since then. The launch of the “Have Three or More” campaign signals the start of the pro-natalist phase to encourage families to have at least three children. During this phase, the ideal family unit and the state’s stance on family is reinvented as depicted in the posters below.</p>
 </div>
 
 <div class = "graphic">
@@ -227,7 +237,7 @@ It seems that the previous anti-natalist policies worked just a little too well,
   <text x="80" y="69" class="Rrrrr pop-keywords">parents</text>
 </svg>
 
-<div class="ui four column grid" id = "populationSVGposters">
+<div class="ui four column grid" id = "threeSVGposters">
   <div class="column" v-for="img in imagespop">
     <div class="ui fluid card">
       <div class="image">
@@ -237,15 +247,17 @@ It seems that the previous anti-natalist policies worked just a little too well,
   </div>
 </div>
 
-<div class="keywordDesc" id="three" v-html="parapop"></div>
+<div id="threedesc">
 </div>
+
 
 </section>
 
 
 <!-- Health Write-Up -->
 <section id = "theHealth">
-
+<h2 class = "subheader">Health</h2>
+<img class = "banner" src = "./img/health.png">
 <div class = "content">
 <h4 class = "sectiontitle">The Health Issues that We Worry About</h4>
 </div>
@@ -258,9 +270,9 @@ It seems that the previous anti-natalist policies worked just a little too well,
 
 </div>
 <!-- this is to load all the photos -->
-<!-- <div id = "photoload" v-for="n in 304">
+<div id = "photoload" v-for="n in 304">
     <img v-bind:src="`./img/${n}.jpg`">
-</div> -->
+</div>
 
 <!-- Script to hover and reveal posters -->
 <script type= "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.common.dev.js"></script>
@@ -272,13 +284,10 @@ var vm = new Vue({
   components: {
     "hoverable-element": hoverableVar
   },
-  // mounted: function() {
-  //   $('.ui.sticky')
-  //   .sticky({
-  //     context: '#context'
-  //   });
-  // },
-  data () {
+  mounted: function() {
+    window.addEventListener("scroll", this.onScroll)
+  },
+  data: function () {
     return {
     showNavbar: true,
     lastScrollPosition: 0,
@@ -290,7 +299,25 @@ var vm = new Vue({
     imagespop: [],
     parapop: "", 
     keywordpop: ""
-    };
+    }
+  },
+  methods: {
+    onScroll: function() {
+      sections = ["theIntro","theDataset", "theEnvironment", "thePopulation", "theHealth"]
+      body = document.body.getBoundingClientRect().top
+      const currentScrollPos = window.pageYOffset || document.documentElement.scrollTop
+      currentSection = "theIntro"
+      sections.forEach(sectionId => {
+        sectionPos = document.getElementById(sectionId).getBoundingClientRect().top - body
+        if (currentScrollPos > sectionPos) currentSection = sectionId
+      })
+      // console.log(currentSection)
+      this.makeActive(currentSection)
+    }, 
+    makeActive: function(sectionID) {
+      d3.selectAll(".menu .item").classed("active", false)
+      d3.select("#" + sectionID + "-link").classed("active", true)
+    }
 }})
 
 </script>
