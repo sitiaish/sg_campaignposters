@@ -69,8 +69,8 @@ d3.json("test.json").then(function(data) {
 	let divBox = d3.select("body").append("div")	
 	    .attr("class", "tooltip")				
 	    .style("opacity", 0)
-		.style("left", "500px")		
-		.style("top", "1700px")
+		.style("left", "550px")		
+		.style("top", "2040px")
 	    .style("z-index", 1)
 
 	divBox.append("img")

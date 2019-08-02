@@ -17,6 +17,7 @@ h1{
 .subheader{
   font-size: 55px;
   font-family: 'Playfair Display', serif;
+  margin-top: 20px;
 }
 
 body, .seven{
@@ -209,8 +210,24 @@ hr {
   transition: all 0.9s;
   overflow-y: hidden;
   width: 650px;
-
 }
+
+#threedesc{
+  clear:both;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  height: 0px;
+  transition: all 0.9s;
+  overflow-y: hidden;
+  width: 650px;
+}
+
+#threedesc p{
+  line-height: 1.7em;
+}
+
 
 .keywordDesc{
   background-color: steelblue;
@@ -236,7 +253,7 @@ hr {
   top: 0; /* Stay on top */
   transition: top 0.4s; /* Transition effect when sliding down (and up) */
   background-color: white;
-  width: 800px;
+  width: 53%;
   padding: 10px;
   z-index: 9999;
 }

@@ -231,14 +231,13 @@ It seems that the previous anti-natalist policies worked just a little too well,
 
 <div class = "graphic">
 <svg id = "populationSVG" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-  <text x="10" y="20" class="medium pop-keywords">children</text>
-  <text x="40" y="45" class="heavy pop-keywords">family time</text>
-  <text x="20" y="64" class="small pop-keywords">marriage</text>
-  <text x="80" y="69" class="Rrrrr pop-keywords">parents</text>
+  <text x="10" y="20" class="medium pop-keywords2" id = "children-text">children</text>
+  <text x="40" y="45" class="heavy pop-keywords2" id = "family-time-text">family time</text>
+  <text x="80" y="69" class="Rrrrr pop-keywords2" id ="parents-text">parents</text>
 </svg>
 
 <div class="ui four column grid" id = "threeSVGposters">
-  <div class="column" v-for="img in imagespop">
+  <div class="column" v-for="img in imagespop2">
     <div class="ui fluid card">
       <div class="image">
         <img :src="img">
@@ -247,7 +246,8 @@ It seems that the previous anti-natalist policies worked just a little too well,
   </div>
 </div>
 
-<div id="threedesc">
+</div>
+<div id="threedesc" v-html="parapop2">
 </div>
 
 
@@ -298,7 +298,10 @@ var vm = new Vue({
     phaseImg: "", 
     imagespop: [],
     parapop: "", 
-    keywordpop: ""
+    keywordpop: "",
+    imagespop2: [],
+    parapop2: "", 
+    keywordpop2: ""
     }
   },
   methods: {
@@ -309,7 +312,7 @@ var vm = new Vue({
       currentSection = "theIntro"
       sections.forEach(sectionId => {
         sectionPos = document.getElementById(sectionId).getBoundingClientRect().top - body
-        if (currentScrollPos > sectionPos) currentSection = sectionId
+        if (currentScrollPos + 20 > sectionPos) currentSection = sectionId
       })
       // console.log(currentSection)
       this.makeActive(currentSection)
@@ -337,6 +340,7 @@ var currentScrollPos = window.pageYOffset;
 
 <script src="js/population.js"></script>
 <script src="js/popword.js"></script>
+<script src="js/popword2.js"></script>
 <script src="js/env.js"></script>
 <script src="js/all.js"></script>
 <script src="js/health.js"></script>
