@@ -70,7 +70,7 @@ d3.json("test.json").then(function(data) {
 	    .attr("class", "tooltip")				
 	    .style("opacity", 0)
 		.style("left", "550px")		
-		.style("top", "2100px")
+		.style("top", "2040px")
 	    .style("z-index", 1)
 
 	divBox.append("img")
