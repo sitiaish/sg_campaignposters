@@ -1,4 +1,8 @@
 /*CSS for the grids*/
+#gridwrapper{
+   width: 800px;
+   margin: 30px auto;
+}
 
 .gridsquare{
    display: grid;

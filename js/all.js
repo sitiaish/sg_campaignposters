@@ -7,7 +7,6 @@ let allchart = d3.select("body")
 		.attr('height', 620)
 		.attr("id", "dataSVG")
 		.style("display", "block")
-		.style("margin-left", "-100px")
 
 
 
