@@ -9,9 +9,6 @@ let allchart = d3.select("body")
 		.style("display", "block")
 
 
-
-		// .attr('style', 'border: 2px solid black; ')
-
 const width = +allchart.attr('width')
 const height = +allchart.attr('height')
 const margin = { top: 20, right: 20, bottom: 50, left: 20};

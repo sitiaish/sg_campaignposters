@@ -15,7 +15,6 @@ body{
   padding-top:70px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 100px;
   color: #171717;
   background-color: white;
 }
@@ -53,7 +52,7 @@ h1{
   padding: 50px 0;
 }
 
-.content p{
+.content p, ul{
   font-family: 'Tinos', serif;
   line-height: 1.9;
   font-size: 18px;
@@ -134,6 +133,19 @@ div.tooltip {
 }
 
 /*ENV BAR CHART*/
+
+.yearAxis line, .yearAxis path{
+  stroke-width: 2px;
+  stroke: #2d3436;
+}
+
+.yearAxis text {
+  font-size: 13px;
+}
+
+text {
+  font-family: 'Roboto Mono', monospace;
+}  
 
 .environmentsection, .populationsection{
   height: 400px;
@@ -241,6 +253,96 @@ div.tooltip {
   width: 900px;
 }
 
+#diseaseSVG {
+  margin: 0 auto;
+}
+
+#disease{
+  position: relative;
+  width: 935px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+img.cloud { 
+  position: absolute;     
+  text-align: center;     
+  top: 0px;
+  left: 350px;
+}
+
+#theAbout a{
+  color: steelblue;
+  text-decoration: underline;
+}
+
+body {
+  font-family: Arial;
+}
+
+a:focus {
+  outline: none;
+}
+
+.portfolioFilter {
+  padding: 15px 0;
+}
+
+.portfolioFilter a {
+  margin-right: 6px;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 4px 15px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.portfolioFilter a.current {
+  background: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  color: #f9f9f9;
+}
+.portfolioContainer{
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+img {
+  margin: 5px;
+  max-width:100%;
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/*Change the screen size*/
+
 @media only screen and (max-width: 1200px) {
 .content{
   width: calc(100vh - 100px);
@@ -257,5 +359,7 @@ div.tooltip {
 
 #posterSide img{
   width: 120px;
+}
+
 }
 

@@ -3,22 +3,6 @@
 <head>
 <meta charset="utf-8">
 
-<style> /* set the CSS */
-.yearAxis line, .yearAxis path{
-  stroke-width: 2px;
-  stroke: #2d3436;
-}
-
-.yearAxis text {
-  font-size: 13px;
-}
-
-text {
-  font-family: 'Roboto Mono', monospace;
-}  
-  
-</style>
-
 <title>A Visualisation of Singapore's National Campaign Posters </title>
 
 <!-- Font -->
@@ -57,8 +41,12 @@ text {
   <a class="item" href = "#theHealth" id="theHealth-link">
     Health</a>
   <div class="right menu">
-    <a class="ui item">
+    <a class="ui item" href = "#theAbout" id="theAbout-link">
     About</a></div>
+</div>
+
+<div id = "photoload" v-for="n in 304">
+  <img v-bind:src="`./img/${n}.jpg`">
 </div>
 
 <section id = "theIntro">
@@ -264,21 +252,50 @@ It seems that the previous anti-natalist policies worked just a little too well,
 <h4 class = "sectiontitle">The Health Issues that We Worry About</h4>
 <p>What’s something that money that can’t buy? Health. </p>
 <p>And healthcare in Singapore is pretty darn efficient. We are ranked among the top for efficient healthcare systems and for healthiest country. In 2019, healthcare again got a large slice from the Budget pie making it “more affordable, accessible, and comprehensive”.</p>
-<p>The Ministry of Health, formed in 1959, supervises healthcare in Singapore. As the parent ministry, it oversees other statutory boards such as the Health Promotion Board. 
-We categorised 200 national campaign posters from 1965-2005 produced by these two organisations below:</p>
+<p>The Ministry of Health, formed in 1959, supervises healthcare in Singapore. The National Healthy Lifestyle campaign was first launched in 1992 by the Ministry of Health and has been making a yearly comeback ever since. A multipronged and general health campaign, it covers aspects such as health diet, smoking, dental health and education on chronic diseases that could potentially afflict the Singapore public. To further educate Singaporeans on healthy living, the Health Promotion Board was established in 2001 as a separated statutory board.</p>
+<p>We categorised 200 national campaign posters from 1965-2005 produced by these two organisations below:</p>
 </div>
 
 <!-- Health graphic -->
 <div class = "healthsection">
 </div>
 
+<div class = "content">
+<p>Disease-related posters make up a substantial proportion of the health posters. From these posters, it is possible to see the diseases that are prevalent in the Singapore society and their respective time periods. This corresponds to the common conditions that affect Singaporeans, as identified by the MOH. These include asthma, coronary heart disease, diabetes mellitus, hypertension, mental health, osteoporosis, pneumonia, stroke, and tuberculosis. At the same time, charting the diseases by year also elucidates any disease outbreak the society had experienced over time.</p>
+
+<img src =  "./img/cloud.png" align = "right" width = "250px">
+
+<p>For instance, the first case of HIV infection in Singapore was diagnosed in May 1985. That same year, the national programme for AIDS public education was launched. The different types of diseases are illustrated in the word cloud. Hover over the rectangles in the graph to view the related posters.</p>
+</div>
+
+<div id = "disease">
+</div>
+
+
+
+</section>
+
+<!-- About section -->
+
+<section id = "theAbout" style = "margin: 100px 0;">
+<div class = "content">
+
+<hr>
+<h2 class = "subheader">About</h2>
+<p>Hi! Singapore in Posters is a deliverable for the Independent Research Project under the <a href = "https://urbanscience.sutd.edu.sg/curriculum/">MSc. Urban Science, Policy and Planning </a>course at the Singapore University of Technology and Design. This project is supervised by <a href = "https://hass.sutd.edu.sg/faculty/nazry-bahrawi/"> Dr Nazry Bahrawi</a>.</p>
+<p>I wanted to create an interactive website that could tell a story from the posters found in the Singapore’s National Archive. For the sake of time, I focused on three broad categories of campaigns: population-control, health and environment. In doing so, I could trace the issues that occured over the years and also how the state intervenes using national campaigns to reach out to the Singapore public.</p>
+<p>This would not have been possible if it hadn't been for following people and organisations:</p>
+<ul>
+  <li><a href = "http://www.nas.gov.sg/archivesonline/posters/">National Archives of Singapore</a> where all the posters for this project are derived from. They have a whole lot of other interesting materials in the archives! </li>
+  <li> Everyone from MUSPP Class of 2019 for their inputs in this projects and especially <a href = "https://hass.sutd.edu.sg/faculty/ate-poorthuis/">Prof. Ate Poorthuis</a> for coordinating this course and introducing me to data viz!</li>
+<!--   <li>Special mention to SK for getting me up to speed with D3 and Vue.js, especially in the second half of the course! He has a pretty dope project on AI which you can check out <a href = "wwww.machinesgonewrong.com">here</a>!</li>  -->
+</ul> 
+
+</div>
 </section>
 
 </div>
-<!-- this is to load all the photos -->
-<div id = "photoload" v-for="n in 304">
-    <img v-bind:src="`./img/${n}.jpg`">
-</div>
+
 
 <!-- Script to hover and reveal posters -->
 <script type= "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.common.dev.js"></script>
@@ -349,8 +366,8 @@ var currentScrollPos = window.pageYOffset;
 <script src="js/popword2.js"></script>
 <script src="js/env.js"></script>
 <script src="js/all.js"></script>
-<!-- <script src="js/health.js"></script>
- --><script src="js/main.js"></script>
+<script src="js/disease.js"></script>
+<script src="js/main.js"></script>
 
 
 </body>

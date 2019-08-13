@@ -1,0 +1,287 @@
+[
+  {
+    "year": 1976,
+    "subsubcat": "general",
+    "imgfull": "./img/112.jpg"
+  },
+  {
+    "year": 1976,
+    "subsubcat": "dengue",
+    "imgfull": "./img/113.jpg"
+  },
+  {
+    "year": 1977,
+    "subsubcat": "heart attack",
+    "imgfull": "./img/114.jpg"
+  },
+  {
+    "year": 1978,
+    "subsubcat": "high blood pressure",
+    "imgfull": "./img/116.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "measles",
+    "imgfull": "./img/120.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "high blood pressure",
+    "imgfull": "./img/126.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "tuberculosis",
+    "imgfull": "./img/130.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "cholera",
+    "imgfull": "./img/131.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "venereal disease",
+    "imgfull": "./img/132.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "leprosy",
+    "imgfull": "./img/133.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "high blood pressure",
+    "imgfull": "./img/134.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "mental illness",
+    "imgfull": "./img/136.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "dengue",
+    "imgfull": "./img/137.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "heart attack",
+    "imgfull": "./img/138.jpg"
+  },
+  {
+    "year": 1979,
+    "subsubcat": "diabetes",
+    "imgfull": "./img/139.jpg"
+  },
+  {
+    "year": 1980,
+    "subsubcat": "high blood pressure",
+    "imgfull": "./img/141.jpg"
+  },
+  {
+    "year": 1980,
+    "subsubcat": "measles",
+    "imgfull": "./img/145.jpg"
+  },
+  {
+    "year": 1983,
+    "subsubcat": "cancer",
+    "imgfull": "./img/153.jpg"
+  },
+  {
+    "year": 1984,
+    "subsubcat": "cancer",
+    "imgfull": "./img/154.jpg"
+  },
+  {
+    "year": 1984,
+    "subsubcat": "high blood pressure",
+    "imgfull": "./img/157.jpg"
+  },
+  {
+    "year": 1987,
+    "subsubcat": "hepatitis",
+    "imgfull": "./img/178.jpg"
+  },
+  {
+    "year": 1987,
+    "subsubcat": "aids",
+    "imgfull": "./img/179.jpg"
+  },
+  {
+    "year": 1987,
+    "subsubcat": "aids",
+    "imgfull": "./img/180.jpg"
+  },
+  {
+    "year": 1987,
+    "subsubcat": "aids",
+    "imgfull": "./img/181.jpg"
+  },
+  {
+    "year": 1987,
+    "subsubcat": "aids",
+    "imgfull": "./img/182.jpg"
+  },
+  {
+    "year": 1988,
+    "subsubcat": "aids",
+    "imgfull": "./img/186.jpg"
+  },
+  {
+    "year": 1988,
+    "subsubcat": "aids",
+    "imgfull": "./img/187.jpg"
+  },
+  {
+    "year": 1988,
+    "subsubcat": "general",
+    "imgfull": "./img/191.jpg"
+  },
+  {
+    "year": 1989,
+    "subsubcat": "aids",
+    "imgfull": "./img/197.jpg"
+  },
+  {
+    "year": 1989,
+    "subsubcat": "aids",
+    "imgfull": "./img/198.jpg"
+  },
+  {
+    "year": 1989,
+    "subsubcat": "aids",
+    "imgfull": "./img/199.jpg"
+  },
+  {
+    "year": 1989,
+    "subsubcat": "aids",
+    "imgfull": "./img/200.jpg"
+  },
+  {
+    "year": 1989,
+    "subsubcat": "aids",
+    "imgfull": "./img/201.jpg"
+  },
+  {
+    "year": 1989,
+    "subsubcat": "yellow fever",
+    "imgfull": "./img/203.jpg"
+  },
+  {
+    "year": 1990,
+    "subsubcat": "cancer",
+    "imgfull": "./img/207.jpg"
+  },
+  {
+    "year": 1991,
+    "subsubcat": "aids",
+    "imgfull": "./img/211.jpg"
+  },
+  {
+    "year": 1991,
+    "subsubcat": "measles",
+    "imgfull": "./img/212.jpg"
+  },
+  {
+    "year": 1991,
+    "subsubcat": "aids",
+    "imgfull": "./img/213.jpg"
+  },
+  {
+    "year": 1991,
+    "subsubcat": "mental illness",
+    "imgfull": "./img/214.jpg"
+  },
+  {
+    "year": 1992,
+    "subsubcat": "aids",
+    "imgfull": "./img/220.jpg"
+  },
+  {
+    "year": 1994,
+    "subsubcat": "aids",
+    "imgfull": "./img/233.jpg"
+  },
+  {
+    "year": 1994,
+    "subsubcat": "aids",
+    "imgfull": "./img/236.jpg"
+  },
+  {
+    "year": 1996,
+    "subsubcat": "cancer",
+    "imgfull": "./img/242.jpg"
+  },
+  {
+    "year": 1996,
+    "subsubcat": "hepatitis",
+    "imgfull": "./img/243.jpg"
+  },
+  {
+    "year": 1997,
+    "subsubcat": "tuberculosis",
+    "imgfull": "./img/246.jpg"
+  },
+  {
+    "year": 2003,
+    "subsubcat": "sars",
+    "imgfull": "./img/256.jpg"
+  },
+  {
+    "year": 2003,
+    "subsubcat": "sars",
+    "imgfull": "./img/257.jpg"
+  },
+  {
+    "year": 2003,
+    "subsubcat": "sars",
+    "imgfull": "./img/258.jpg"
+  },
+  {
+    "year": 2003,
+    "subsubcat": "sars",
+    "imgfull": "./img/259.jpg"
+  },
+  {
+    "year": 1999,
+    "subsubcat": "osteoporosis",
+    "imgfull": "./img/261.jpg"
+  },
+  {
+    "year": 2001,
+    "subsubcat": "diabetes",
+    "imgfull": "./img/263.jpg"
+  },
+  {
+    "year": 2002,
+    "subsubcat": "stroke",
+    "imgfull": "./img/268.jpg"
+  },
+  {
+    "year": 2002,
+    "subsubcat": "asthma",
+    "imgfull": "./img/269.jpg"
+  },
+  {
+    "year": 2003,
+    "subsubcat": "aids",
+    "imgfull": "./img/273.jpg"
+  },
+  {
+    "year": 2003,
+    "subsubcat": "aids",
+    "imgfull": "./img/275.jpg"
+  },
+  {
+    "year": 2004,
+    "subsubcat": "cancer",
+    "imgfull": "./img/277.jpg"
+  },
+  {
+    "year": 2006,
+    "subsubcat": "hand foot mouth disease",
+    "imgfull": "./img/300.jpg"
+  }
+]
