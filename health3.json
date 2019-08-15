@@ -31,6 +31,11 @@
   },
   {
     "year": 1979,
+    "subsubcat": "high blood pressure",
+    "imgfull": "./img/134.jpg"
+  },
+  {
+    "year": 1979,
     "subsubcat": "tuberculosis",
     "imgfull": "./img/130.jpg"
   },
@@ -48,11 +53,6 @@
     "year": 1979,
     "subsubcat": "leprosy",
     "imgfull": "./img/133.jpg"
-  },
-  {
-    "year": 1979,
-    "subsubcat": "high blood pressure",
-    "imgfull": "./img/134.jpg"
   },
   {
     "year": 1979,
@@ -76,14 +76,15 @@
   },
   {
     "year": 1980,
-    "subsubcat": "high blood pressure",
-    "imgfull": "./img/141.jpg"
-  },
-  {
-    "year": 1980,
     "subsubcat": "measles",
     "imgfull": "./img/145.jpg"
   },
+  {
+    "year": 1980,
+    "subsubcat": "high blood pressure",
+    "imgfull": "./img/141.jpg"
+  },
+
   {
     "year": 1983,
     "subsubcat": "cancer",
@@ -98,11 +99,6 @@
     "year": 1984,
     "subsubcat": "high blood pressure",
     "imgfull": "./img/157.jpg"
-  },
-  {
-    "year": 1987,
-    "subsubcat": "hepatitis",
-    "imgfull": "./img/178.jpg"
   },
   {
     "year": 1987,
@@ -123,6 +119,11 @@
     "year": 1987,
     "subsubcat": "aids",
     "imgfull": "./img/182.jpg"
+  },
+  {
+    "year": 1987,
+    "subsubcat": "hepatitis",
+    "imgfull": "./img/178.jpg"
   },
   {
     "year": 1988,
@@ -176,13 +177,13 @@
   },
   {
     "year": 1991,
-    "subsubcat": "aids",
-    "imgfull": "./img/211.jpg"
+    "subsubcat": "measles",
+    "imgfull": "./img/212.jpg"
   },
   {
     "year": 1991,
-    "subsubcat": "measles",
-    "imgfull": "./img/212.jpg"
+    "subsubcat": "aids",
+    "imgfull": "./img/211.jpg"
   },
   {
     "year": 1991,
