@@ -323,7 +323,7 @@ img.cloud {
 
 /*Change the screen size*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 .content{
   width: calc(100vh - 100px);
   margin: 0 auto;
