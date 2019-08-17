@@ -51,7 +51,7 @@ d3.json("health3.json").then(function(data) {
 		.attr('height', 10)
 	 	.attr('x', d => xdisScale(d.year))
 	 	.attr('y', (d,i) => 300 -20 - (i * 15))
-	 	.attr("fill", "#34495e")
+	 	.attr("fill", "#b2bec3")
 	 	.attr("fill", function(d){
 	 		return d.subsubcat === 'aids' ? "#747d8c" 
 	 		// : d.subsubcat === 'cancer' ? "#bdc3c7"
@@ -80,10 +80,19 @@ function changeColor(disease, color, text) {
     .duration(100)
     .attr("fill", "#747d8c")
 
-    d3.selectAll('.diseaserect[typeofdisease="' + disease + '"]')
+    if (disease === "others") {
+    	d3.selectAll('.diseaserect:not([typeofdisease="aids"]):not([typeofdisease="sars"])')
+    		.transition()
+    		.duration(100)
+    		.attr("fill", color)
+    } else {
+    	d3.selectAll('.diseaserect[typeofdisease="' + disease + '"]')
     .transition()		
     .duration(100)
     .attr("fill", color)
+    }
+
+    
 
 	diseaseContent.html(`<hr>${text}`)
 };
